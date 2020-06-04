@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349977279643
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349977279674
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349977279690
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349977280423
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349977287146
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Terminate",1349977375894
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349977376069
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349977377006
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349977383542
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349977442447
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349977477298
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349977486159
+error,log,,,"SOPC design not set.",1349977486329
+error,log,,,"CPU module not set.",1349977486368
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349977486401
+error,log,,,"CPU architecture type not set. ",1349977486436
+error,log,,,"CPU master group not set.",1349977486470
+error,log,,,"SOPC design not set.",1349977486572
+error,log,,,"CPU module not set.",1349977486606
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349977486640
+error,log,,,"CPU architecture type not set. ",1349977486676
+error,log,,,"CPU master group not set.",1349977486711
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349977487961
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349977492212
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349977498936

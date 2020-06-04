@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"CPU module not set.",1349979191362
+error,log,,,"CPU module not set.",1349979191402
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349979191462
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349979191512
+error,log,,,"CPU architecture type not set. ",1349979191552
+error,log,,,"CPU architecture type not set. ",1349979191590
+error,log,,,"CPU master group not set.",1349979191628
+error,log,,,"CPU master group not set.",1349979191666
+error,log,,,"SOPC design not set.",1349979191709
+error,log,,,"CPU module not set.",1349979191747
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349979191785
+error,log,,,"CPU architecture type not set. ",1349979191823
+error,log,,,"CPU master group not set.",1349979191864
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1349979191926
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProblemView",1349979202579
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349979216313
+opened,view,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views.PropertySheet",1349979217268
+activated,view,org.eclipse.ui.views,3.4.1.M20090826-0800,"org.eclipse.ui.views.PropertySheet",1349979217286
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349979217798
+opened,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.TaskList",1349979221200
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.TaskList",1349979221233
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProblemView",1349979222840
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979225361
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979231455
+error,log,,,"SOPC design not set.",1349979231745

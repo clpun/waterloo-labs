@@ -1,0 +1,1441 @@
+
+
+Period: 12		Duty Cycle: 1	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 5 / 1024th(s) of a period
+  max latency = 7 microsecond(s)
+  task units processed = 11206 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 57 / 1024th(s) of a period
+  max latency = 88 microsecond(s)
+  task units processed = 18546 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 1897 pulse(s)
+  max latency = 21506 / 1024th(s) of a period
+  max latency = 33549 microsecond(s)
+  task units processed = 373905 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 10 pulse(s)
+  max latency = 10301 / 1024th(s) of a period
+  max latency = 16069 microsecond(s)
+  task units processed = 20336 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 119 pulse(s)
+  max latency = 9275 / 1024th(s) of a period
+  max latency = 14469 microsecond(s)
+  task units processed = 39155 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 177 pulse(s)
+  max latency = 4139 / 1024th(s) of a period
+  max latency = 6456 microsecond(s)
+  task units processed = 49419 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 43 pulse(s)
+  max latency = 44094 / 1024th(s) of a period
+  max latency = 68786 microsecond(s)
+  task units processed = 26047 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 132 pulse(s)
+  max latency = 13373 / 1024th(s) of a period
+  max latency = 20861 microsecond(s)
+  task units processed = 40115 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 784 pulse(s)
+  max latency = 8239 / 1024th(s) of a period
+  max latency = 12852 microsecond(s)
+  task units processed = 158436 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 1	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 6%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 4312 pulse(s)
+  max latency = 45106 / 1024th(s) of a period
+  max latency = 70365 microsecond(s)
+  task units processed = 793338 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 8 / 1024th(s) of a period
+  max latency = 12 microsecond(s)
+  task units processed = 10434 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 59 / 1024th(s) of a period
+  max latency = 92 microsecond(s)
+  task units processed = 16511 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 9 pulse(s)
+  max latency = 1055 / 1024th(s) of a period
+  max latency = 1645 microsecond(s)
+  task units processed = 16758 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 3 pulse(s)
+  max latency = 3163 / 1024th(s) of a period
+  max latency = 4934 microsecond(s)
+  task units processed = 18879 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 69 / 1024th(s) of a period
+  max latency = 107 microsecond(s)
+  task units processed = 16277 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 108 pulse(s)
+  max latency = 3143 / 1024th(s) of a period
+  max latency = 4903 microsecond(s)
+  task units processed = 36363 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 33 pulse(s)
+  max latency = 25726 / 1024th(s) of a period
+  max latency = 40132 microsecond(s)
+  task units processed = 23424 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 113 pulse(s)
+  max latency = 8285 / 1024th(s) of a period
+  max latency = 12924 microsecond(s)
+  task units processed = 36991 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 2 pulse(s)
+  max latency = 2148 / 1024th(s) of a period
+  max latency = 3350 microsecond(s)
+  task units processed = 16443 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 2	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 12%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 3510 pulse(s)
+  max latency = 38921 / 1024th(s) of a period
+  max latency = 60716 microsecond(s)
+  task units processed = 647283 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 4 / 1024th(s) of a period
+  max latency = 6 microsecond(s)
+  task units processed = 9719 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 6 / 1024th(s) of a period
+  max latency = 9 microsecond(s)
+  task units processed = 15279 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 8 pulse(s)
+  max latency = 1120 / 1024th(s) of a period
+  max latency = 1747 microsecond(s)
+  task units processed = 16527 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 1 pulse(s)
+  max latency = 1149 / 1024th(s) of a period
+  max latency = 1792 microsecond(s)
+  task units processed = 15469 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 85 / 1024th(s) of a period
+  max latency = 132 microsecond(s)
+  task units processed = 16277 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 11 pulse(s)
+  max latency = 1055 / 1024th(s) of a period
+  max latency = 1645 microsecond(s)
+  task units processed = 16269 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 5 pulse(s)
+  max latency = 5310 / 1024th(s) of a period
+  max latency = 8283 microsecond(s)
+  task units processed = 19093 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 105 pulse(s)
+  max latency = 5288 / 1024th(s) of a period
+  max latency = 8249 microsecond(s)
+  task units processed = 35003 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 2 pulse(s)
+  max latency = 2135 / 1024th(s) of a period
+  max latency = 3330 microsecond(s)
+  task units processed = 16443 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 3	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 18%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 2816 pulse(s)
+  max latency = 31746 / 1024th(s) of a period
+  max latency = 49523 microsecond(s)
+  task units processed = 521157 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 8 / 1024th(s) of a period
+  max latency = 12 microsecond(s)
+  task units processed = 8930 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 4 pulse(s)
+  max latency = 1075 / 1024th(s) of a period
+  max latency = 1677 microsecond(s)
+  task units processed = 14014 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 59 / 1024th(s) of a period
+  max latency = 92 microsecond(s)
+  task units processed = 14595 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 6 pulse(s)
+  max latency = 1075 / 1024th(s) of a period
+  max latency = 1677 microsecond(s)
+  task units processed = 15376 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 141 / 1024th(s) of a period
+  max latency = 219 microsecond(s)
+  task units processed = 16277 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 11 pulse(s)
+  max latency = 1130 / 1024th(s) of a period
+  max latency = 1762 microsecond(s)
+  task units processed = 16218 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 254 / 1024th(s) of a period
+  max latency = 396 microsecond(s)
+  task units processed = 18178 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 9 pulse(s)
+  max latency = 5282 / 1024th(s) of a period
+  max latency = 8239 microsecond(s)
+  task units processed = 14839 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 1 pulse(s)
+  max latency = 1251 / 1024th(s) of a period
+  max latency = 1951 microsecond(s)
+  task units processed = 16281 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 12		Duty Cycle: 4	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1066 microseconds
+  duty cycle = 25%
+  latency resolution = 1041 nanoseconds
+
+Test complete.
+Results:
+  missed = 2419 pulse(s)
+  max latency = 41192 / 1024th(s) of a period
+  max latency = 64259 microsecond(s)
+  task units processed = 448448 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 6 / 1024th(s) of a period
+  max latency = 10 microsecond(s)
+  task units processed = 12094 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 40 / 1024th(s) of a period
+  max latency = 67 microsecond(s)
+  task units processed = 19635 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 102 pulse(s)
+  max latency = 4143 / 1024th(s) of a period
+  max latency = 6960 microsecond(s)
+  task units processed = 38262 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 99 pulse(s)
+  max latency = 1083 / 1024th(s) of a period
+  max latency = 1819 microsecond(s)
+  task units processed = 39339 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 506 pulse(s)
+  max latency = 6165 / 1024th(s) of a period
+  max latency = 10357 microsecond(s)
+  task units processed = 119433 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 672 pulse(s)
+  max latency = 9219 / 1024th(s) of a period
+  max latency = 15487 microsecond(s)
+  task units processed = 151776 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 561 pulse(s)
+  max latency = 10285 / 1024th(s) of a period
+  max latency = 17278 microsecond(s)
+  task units processed = 128832 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 304 pulse(s)
+  max latency = 9241 / 1024th(s) of a period
+  max latency = 15524 microsecond(s)
+  task units processed = 78171 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 414 pulse(s)
+  max latency = 13362 / 1024th(s) of a period
+  max latency = 22448 microsecond(s)
+  task units processed = 99225 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 1	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 6%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 4 pulse(s)
+  max latency = 4148 / 1024th(s) of a period
+  max latency = 6968 microsecond(s)
+  task units processed = 18837 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 3 pulse(s)
+  max latency = 1028 / 1024th(s) of a period
+  max latency = 1727 microsecond(s)
+  task units processed = 10991 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 48 / 1024th(s) of a period
+  max latency = 80 microsecond(s)
+  task units processed = 18546 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 4 pulse(s)
+  max latency = 1121 / 1024th(s) of a period
+  max latency = 1883 microsecond(s)
+  task units processed = 18480 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 1 pulse(s)
+  max latency = 1079 / 1024th(s) of a period
+  max latency = 1812 microsecond(s)
+  task units processed = 18662 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 287 pulse(s)
+  max latency = 3124 / 1024th(s) of a period
+  max latency = 5248 microsecond(s)
+  task units processed = 74046 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 386 pulse(s)
+  max latency = 5131 / 1024th(s) of a period
+  max latency = 8620 microsecond(s)
+  task units processed = 93534 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 1 pulse(s)
+  max latency = 1135 / 1024th(s) of a period
+  max latency = 1906 microsecond(s)
+  task units processed = 18361 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 209 pulse(s)
+  max latency = 5207 / 1024th(s) of a period
+  max latency = 8747 microsecond(s)
+  task units processed = 57368 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 201 pulse(s)
+  max latency = 6164 / 1024th(s) of a period
+  max latency = 10355 microsecond(s)
+  task units processed = 56052 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 2	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 12%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 4 pulse(s)
+  max latency = 4198 / 1024th(s) of a period
+  max latency = 7052 microsecond(s)
+  task units processed = 18837 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 4 pulse(s)
+  max latency = 1029 / 1024th(s) of a period
+  max latency = 1728 microsecond(s)
+  task units processed = 10263 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 55 / 1024th(s) of a period
+  max latency = 92 microsecond(s)
+  task units processed = 16544 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 3 pulse(s)
+  max latency = 1079 / 1024th(s) of a period
+  max latency = 1812 microsecond(s)
+  task units processed = 16338 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 136 / 1024th(s) of a period
+  max latency = 228 microsecond(s)
+  task units processed = 18476 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 5 pulse(s)
+  max latency = 1094 / 1024th(s) of a period
+  max latency = 1837 microsecond(s)
+  task units processed = 16400 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 189 pulse(s)
+  max latency = 2233 / 1024th(s) of a period
+  max latency = 3751 microsecond(s)
+  task units processed = 53448 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 173 / 1024th(s) of a period
+  max latency = 290 microsecond(s)
+  task units processed = 18178 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 196 pulse(s)
+  max latency = 4163 / 1024th(s) of a period
+  max latency = 6993 microsecond(s)
+  task units processed = 55025 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 6 pulse(s)
+  max latency = 5162 / 1024th(s) of a period
+  max latency = 8672 microsecond(s)
+  task units processed = 16848 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 3	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 18%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 3 pulse(s)
+  max latency = 3206 / 1024th(s) of a period
+  max latency = 5386 microsecond(s)
+  task units processed = 18655 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 1
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 4 / 1024th(s) of a period
+  max latency = 6 microsecond(s)
+  task units processed = 9627 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 11
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 3 pulse(s)
+  max latency = 1054 / 1024th(s) of a period
+  max latency = 1770 microsecond(s)
+  task units processed = 14971 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 21
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 80 / 1024th(s) of a period
+  max latency = 134 microsecond(s)
+  task units processed = 16674 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 31
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 5 pulse(s)
+  max latency = 1079 / 1024th(s) of a period
+  max latency = 1812 microsecond(s)
+  task units processed = 15531 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 41
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 74 / 1024th(s) of a period
+  max latency = 124 microsecond(s)
+  task units processed = 16277 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 51
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 4 pulse(s)
+  max latency = 1246 / 1024th(s) of a period
+  max latency = 2093 microsecond(s)
+  task units processed = 15351 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 61
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 0 pulse(s)
+  max latency = 181 / 1024th(s) of a period
+  max latency = 304 microsecond(s)
+  task units processed = 18178 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 71
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 97 pulse(s)
+  max latency = 2260 / 1024th(s) of a period
+  max latency = 3796 microsecond(s)
+  task units processed = 33867 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 81
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 1 pulse(s)
+  max latency = 1140 / 1024th(s) of a period
+  max latency = 1915 microsecond(s)
+  task units processed = 16281 units
+
+Exiting...
+-------------------------------------------------------------
+
+
+Period: 13		Duty Cycle: 4	Granularity: 91
+Beginning test.
+Test specifications:
+  period = 1148 microseconds
+  duty cycle = 25%
+  latency resolution = 1121 nanoseconds
+
+Test complete.
+Results:
+  missed = 9 pulse(s)
+  max latency = 2254 / 1024th(s) of a period
+  max latency = 3786 microsecond(s)
+  task units processed = 18564 units
+
+Exiting...
+-------------------------------------------------------------
+

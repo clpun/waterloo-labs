@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983592119
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983594194
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983596222
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983598671
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983599623
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349983609923
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Terminate",1349983610033
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349983610177
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349983611176
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983619382
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983672328
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349983692624
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983781138
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983798781
+error,log,,,"SOPC design not set.",1349983799983
+error,log,,,"CPU module not set.",1349983800014
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349983800092
+error,log,,,"CPU architecture type not set. ",1349983800123
+error,log,,,"CPU master group not set.",1349983800154
+error,log,,,"SOPC design not set.",1349983800263
+error,log,,,"CPU module not set.",1349983800295
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349983800326
+error,log,,,"CPU architecture type not set. ",1349983800357
+error,log,,,"CPU master group not set.",1349983800388
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349983801543

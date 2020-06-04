@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1351708531468
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708558706
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708616229
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708653705
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708662503
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1351708675483
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1351708677011
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708679024
+error,log,,,"Internal Error",1351708707556
+error,log,,,"Problems encountered while deleting resources.",1351708707556
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708728200
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1351708728200
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1351708728200
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708729479
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708736156
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708747981
+error,log,,,"Internal Error",1351708749057
+error,log,,,"Problems encountered while deleting resources.",1351708749057
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708778557
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1351708778557
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1351708778557
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708780924
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1351708782088
+executed,command,org.eclipse.ltk.ui.refactoring,3.4.100.v20090604,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1351708782088
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1351708782088

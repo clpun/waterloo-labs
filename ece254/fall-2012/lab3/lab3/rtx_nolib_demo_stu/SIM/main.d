@@ -1,0 +1,10 @@
+.\SIM\main.o: src\main.c
+.\SIM\main.o: C:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.h
+.\SIM\main.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+.\SIM\main.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\SIM\main.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\SIM\main.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\SIM\main.o: C:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h
+.\SIM\main.o: src\Serial.h
+.\SIM\main.o: src\../INC/RTL.h
+.\SIM\main.o: C:\Keil\ARM\RV31\Inc\stdio.h

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349988209780
+opened,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349988219405
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349988219467
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349988223086
+closed,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349988223118
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.TaskList",1349988229186
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349988229794
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349988232181
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349988233726
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349988235598
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349988238172
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349988243897
+error,log,,,"SOPC design not set.",1349988244131
+error,log,,,"CPU module not set.",1349988244178
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349988244209
+error,log,,,"CPU architecture type not set. ",1349988244271
+error,log,,,"CPU master group not set.",1349988244318
+error,log,,,"SOPC design not set.",1349988244427
+error,log,,,"CPU module not set.",1349988244458
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349988244490
+error,log,,,"CPU architecture type not set. ",1349988244536
+error,log,,,"CPU master group not set.",1349988244568
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349988248859
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349988257522
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349988257568

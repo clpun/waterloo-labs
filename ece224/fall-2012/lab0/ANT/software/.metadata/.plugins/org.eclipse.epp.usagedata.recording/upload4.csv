@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch",1349976809288
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349976810552
+started,bundle,com.altera.sbtgui.core,10.1.0.153,"com.altera.sbtgui.core",1349976813968
+started,bundle,org.eclipse.core.databinding,1.2.0.M20090819-0800,"org.eclipse.core.databinding",1349976814997
+started,bundle,org.eclipse.core.databinding.property,1.2.0.M20090819-0800,"org.eclipse.core.databinding.property",1349976815013
+opened,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349976827586
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349976827586
+started,bundle,org.eclipse.cdt.managedbuilder.core,6.0.0.200909110608,"org.eclipse.cdt.managedbuilder.core",1349976889624
+started,bundle,org.eclipse.core.variables,3.2.200.v20090521,"org.eclipse.core.variables",1349976890232
+started,bundle,org.eclipse.cdt.managedbuilder.gnu.ui,5.0.100.200909110608,"org.eclipse.cdt.managedbuilder.gnu.ui",1349976890264
+started,bundle,org.eclipse.cdt.make.core,6.0.0.200909110608,"org.eclipse.cdt.make.core",1349976891028
+error,log,,,"Could not write file: D:\\ece_224\\lab0\\ANT\\software\\lab1_phase1\\.cproject.\n** Error occured because of file status <hidden>.\n** This status is disabled now, to allow writing.",1349976893836
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349976900356
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1349976900372
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1349976900372
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1349976901745
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349976906440
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349976910964
+error,log,,,"Could not write file: D:\\ece_224\\lab0\\ANT\\software\\lab1_phase1_bsp\\.cproject.\n** Error occured because of file status <hidden>.\n** This status is disabled now, to allow writing.",1349976937264
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349976939822
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1349976939838
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.import",1349976939838
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1349976943784
+started,bundle,org.eclipse.search,3.5.1.r351_v20090708-0800,"org.eclipse.search",1349976945922
+started,bundle,org.eclipse.compare.core,3.5.0.I20090430-0408,"org.eclipse.compare.core",1349976946374

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1349984189087
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1349984309343
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1349984314445
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.toggleOverwrite",1349984336565
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.toggleOverwrite",1349984337361
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineEnd",1349984340309
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349984366273
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349984464356
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349984470425
+error,log,,,"SOPC design not set.",1349984470643
+error,log,,,"CPU module not set.",1349984470690
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349984470752
+error,log,,,"CPU architecture type not set. ",1349984470799
+error,log,,,"CPU master group not set.",1349984470830
+error,log,,,"SOPC design not set.",1349984470939
+error,log,,,"CPU module not set.",1349984470971
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349984471002
+error,log,,,"CPU architecture type not set. ",1349984471033
+error,log,,,"CPU master group not set.",1349984471080
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349984472375
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349984476697
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349984484751
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349984484783
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349984484845
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349984485485

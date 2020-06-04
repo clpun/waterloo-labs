@@ -1,0 +1,25 @@
+new
+push 5
+push 6
+top 6
+pop 6
+delete
+new: 3
+push 1
+push 2
+push 3
+size 3
+push 4
+size 3
+pop 4
+pop 3
+assign
+	pop 2
+	empty 1
+	delete
+exit
+empty 0
+pop 2
+empty 1
+delete
+summary

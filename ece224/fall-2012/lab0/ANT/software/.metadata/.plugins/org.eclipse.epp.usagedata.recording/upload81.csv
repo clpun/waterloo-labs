@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989185370
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989185417
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989185480
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989185526
+error,log,,,"SOPC design not set.",1349989185589
+error,log,,,"CPU module not set.",1349989185620
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989185682
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989185745
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989185776
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989185807
+error,log,,,"CPU architecture type not set. ",1349989185838
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989185870
+error,log,,,"CPU master group not set.",1349989185916
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989185948
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989185979
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989186010
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989186057
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989186088
+error,log,,,"SOPC design not set.",1349989186119
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989186166
+error,log,,,"CPU module not set.",1349989186197
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989186228
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989186275
+error,log,,,"CPU architecture type not set. ",1349989186306
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989186353

@@ -1,0 +1,67 @@
+MEM_NOWAIT Output:
+
+Method 1: The free mem starts at 0x10001588
+
+Method 2: The free mem starts at 0x10001588
+
+The MSP is 0x10001578
+
+I am in task 1
+
+ptr[0]=1000159c
+
+ptr[1]=100015a4
+
+ptr[2]=100015ac
+
+ptr[3]=100015b4
+
+free ptr[0]=1000159c returns 0
+
+free ptr[1]=100015a4 returns 0
+
+free ptr[2]=100015ac returns 0
+
+free ptr[3]=100015b4 returns 0
+
+ptr[0]=100015b4
+
+ptr[1]=100015ac
+
+ptr[2]=100015a4
+
+ptr[3]=1000159c
+
+
+MEM_WAIT Output:
+Method 1: The free mem starts at 0x10001588
+
+Method 2: The free mem starts at 0x10001588
+
+The MSP is 0x10001578
+
+I am in task 1
+
+ptr[0]=1000159c
+
+ptr[1]=100015a4
+
+ptr[2]=100015ac
+
+ptr[3]=100015b4
+
+free ptr[0]=1000159c returns 0
+
+free ptr[1]=100015a4 returns 0
+
+free ptr[2]=100015ac returns 0
+
+free ptr[3]=100015b4 returns 0
+
+ptr[0]=100015b4
+
+ptr[1]=100015ac
+
+ptr[2]=100015a4
+
+ptr[3]=1000159c

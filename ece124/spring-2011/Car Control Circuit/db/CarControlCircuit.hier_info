@@ -1,0 +1,19 @@
+|CarControlCircuit
+key[0] => GasControlMotor~0.IN1
+key[1] => GasControlMotor~2.OUTPUTSELECT
+key[2] => GasControlMotor~0.IN0
+key[2] => BrakeLight~0.OUTPUTSELECT
+key[3] => ~NO_FANOUT~
+sw[0] => ~NO_FANOUT~
+sw[1] => BrakeLight~0.DATAB
+sw[1] => GasControlMotor~1.IN0
+sw[2] => ~NO_FANOUT~
+sw[3] => ~NO_FANOUT~
+sw[4] => ~NO_FANOUT~
+sw[5] => ~NO_FANOUT~
+ledr[0] <= BrakeLight~0.DB_MAX_OUTPUT_PORT_TYPE
+ledr[1] <= <GND>
+ledg[0] <= GasControlMotor~2.DB_MAX_OUTPUT_PORT_TYPE
+ledg[1] <= <GND>
+
+

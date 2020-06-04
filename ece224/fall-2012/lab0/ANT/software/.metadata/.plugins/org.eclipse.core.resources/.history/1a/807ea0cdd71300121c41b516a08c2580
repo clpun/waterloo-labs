@@ -1,0 +1,66 @@
+#include "lab1_phase2.h"
+#include <io.h>
+
+#define MIN_PERIOD 6
+#define MAX_PERIOD 7
+#define PERIOD_INCR 1
+
+#define MIN_DUTY_CYCLE 8
+#define MAX_DUTY_CYCLE 9
+#define DUTY_CYCLE_INCR 1
+
+#define MIN_GRANULARITY 200
+#define MAX_GRANULARITY 201
+#define GRANULARITY_INCR 100
+
+#define INTERRUPTS
+//#define POLLING
+
+#ifdef POLLING
+int main (void) {
+	int i, x, y, z;
+	for (x = MIN_PERIOD; x < MAX_PERIOD; x += PERIOD_INCR) {
+		for (y = MIN_DUTY_CYCLE; y < MAX_DUTY_CYCLE; y += DUTY_CYCLE_INCR) {
+			for (z = MIN_GRANULARITY; z < MAX_GRANULARITY; z += GRANULARITY_INCR) {
+				init(x, y);
+				for (i = 0; i < 100; i++) {
+					while(IORD(PIO_PULSE_BASE, 0) == 0) {}
+					IOWR(PIO_RESPONSE_BASE, 0, 1);
+					//IOWR(LED_PIO_BASE, 0, 1);
+					background(z);
+					while(IORD(PIO_PULSE_BASE, 0) == 1) {}
+					IOWR(PIO_RESPONSE_BASE, 0, 0);
+					//IOWR(LED_PIO_BASE, 0, 0);
+				}
+				finalize();
+			}
+		}
+	}
+}
+#endif
+
+#ifdef INTERRUPTS
+int num_captured = 0;
+
+int main (void) {
+	int i, x, y, z;
+	alt_irq_register( PIO_PULSE_IRQ, (void*)0, pulse_ISR );
+	for (x = MIN_PERIOD; x < MAX_PERIOD; x += PERIOD_INCR) {
+		for (y = MIN_DUTY_CYCLE; y < MAX_DUTY_CYCLE; y += DUTY_CYCLE_INCR) {
+			for (z = MIN_GRANULARITY; z < MAX_GRANULARITY; z += GRANULARITY_INCR) {
+				num_captured = 0;
+				init(x, y);
+				while (num_captured < 100) {
+					background(z);
+				}
+				finalize();
+			}
+		}
+	}
+}
+
+static void pulse_ISR(void* context, alt_u32 id)
+{
+
+}
+#endif

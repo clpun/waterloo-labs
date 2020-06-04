@@ -1,0 +1,3 @@
+Design Objectives:
+
+Missed Pulses <= 25% of captured pulses

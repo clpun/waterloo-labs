@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983137919
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983138870
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983141959
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349983145766
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Terminate",1349983145875
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349983146004
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349983147019
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983164974
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983354054
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983376393
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983401399
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349983419214
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983518211
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983524935
+error,log,,,"SOPC design not set.",1349983525153
+error,log,,,"CPU module not set.",1349983525200
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349983525294
+error,log,,,"CPU architecture type not set. ",1349983525325
+error,log,,,"CPU master group not set.",1349983525372
+error,log,,,"SOPC design not set.",1349983525543
+error,log,,,"CPU module not set.",1349983525590
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349983525637
+error,log,,,"CPU architecture type not set. ",1349983525668
+error,log,,,"CPU master group not set.",1349983525715
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349983526869

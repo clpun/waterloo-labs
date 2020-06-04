@@ -1,0 +1,13 @@
+.\SIM\rt_system.o: rtx_src\rt_System.c
+.\SIM\rt_system.o: rtx_src\rt_TypeDef.h
+.\SIM\rt_system.o: rtx_src\RTX_Config.h
+.\SIM\rt_system.o: rtx_src\rt_Task.h
+.\SIM\rt_system.o: rtx_src\rt_System.h
+.\SIM\rt_system.o: rtx_src\rt_Event.h
+.\SIM\rt_system.o: rtx_src\rt_List.h
+.\SIM\rt_system.o: rtx_src\rt_Mailbox.h
+.\SIM\rt_system.o: rtx_src\rt_Semaphore.h
+.\SIM\rt_system.o: rtx_src\rt_Time.h
+.\SIM\rt_system.o: rtx_src\rt_Timer.h
+.\SIM\rt_system.o: rtx_src\rt_Robin.h
+.\SIM\rt_system.o: rtx_src\rt_HAL_CM.h

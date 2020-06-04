@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989187445
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989187492
+error,log,,,"SOPC design not set.",1349989187539
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989187570
+error,log,,,"CPU module not set.",1349989187632
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989187679
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989187726
+error,log,,,"CPU architecture type not set. ",1349989187773
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989187835
+error,log,,,"CPU master group not set.",1349989187882
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989187913
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989187960
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989187991
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989188038
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989188069
+error,log,,,"SOPC design not set.",1349989188116
+error,log,,,"CPU module not set.",1349989188147
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989188194
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989188241
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989188272
+error,log,,,"CPU architecture type not set. ",1349989188303
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989188350
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989188381
+error,log,,,"CPU master group not set.",1349989188412
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989188444

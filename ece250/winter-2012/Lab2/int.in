@@ -1,0 +1,62 @@
+new: 2
+size 0
+capacity 4
+empty 1
+insert 31
+size 1
+capacity 4
+empty 0
+insert 191
+bin 2 191
+bin 3 31
+insert 159
+load_factor 0.75
+bin 1 159
+remove 111 0
+remove 159 1
+deleted_factor 0
+bin 2 31
+bin 3 191
+member 159 0
+size 2
+insert 532
+insert 421
+load_factor 0.5
+deleted_factor 0
+insert 932
+insert 432
+bin 0 432
+bin 1 932
+bin 4 532
+bin 5 421
+bin 6 191
+bin 7 31
+load_factor 0.75
+deleted_factor 0
+size 6
+capacity 8
+remove 31 1
+load_factor 0.625
+deleted_factor 0.125
+remove 191 1
+load_factor 0.5
+deleted_factor 0
+size 4
+capacity 8
+bin 0 432
+bin 4 932
+bin 5 421
+bin 7 532
+remove 31 0
+remove 191 0
+size 4
+capacity 8
+remove 432 1
+capacity 8
+remove 421 1
+size 2
+capacity 4
+bin 0 932
+bin 1 532
+delete
+summary

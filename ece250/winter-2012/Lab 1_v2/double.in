@@ -1,0 +1,16 @@
+new
+dequeue!
+empty 1
+size 0
+enqueue 56.3
+enqueue 78.3
+enqueue 90.3
+dequeue 56.3
+enqueue 123.3
+dequeue 78.3
+dequeue 90.3
+head 123.3
+dequeue 123.3
+head! 
+delete
+summary

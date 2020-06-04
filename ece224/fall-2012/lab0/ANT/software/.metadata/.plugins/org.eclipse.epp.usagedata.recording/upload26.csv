@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"CPU architecture type not set. ",1349979522369
+error,log,,,"CPU master group not set.",1349979522413
+error,log,,,"CPU master group not set.",1349979522463
+error,log,,,"SOPC design not set.",1349979522535
+error,log,,,"CPU module not set.",1349979522573
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349979522614
+error,log,,,"CPU architecture type not set. ",1349979522651
+error,log,,,"CPU master group not set.",1349979522689
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979522836
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979522916
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979525490
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979528664
+opened,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProgressView",1349979549429
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.ProgressView",1349979549500
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349979556071
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349979558825
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1349979591768
+opened,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349979594243
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349979594342
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349979625548
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979667820
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349979674159
+error,log,,,"SOPC design not set.",1349979674299
+error,log,,,"CPU module not set.",1349979674343
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349979674383

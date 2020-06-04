@@ -1,0 +1,22 @@
+new
+add 3
+add 7
+subtract 5
+times 4
+divided_by 2
+evaluate 10
+reverse_polish
+delete
+new
+add 1
+times 3
+divides 5
+in_fix
+delete
+new
+add 1
+times 3
+divided_by 5
+in_fix
+evaluate 0 
+delete

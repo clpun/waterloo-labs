@@ -1,0 +1,615 @@
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+
+                        		cpu	5307
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+
+                        **********************************************************************
+                        *   MCF5206 ColdFire Assembly Header File                            *
+                        *   Developed by       : Motorola                                    *
+                        *                        Imaging and Storage Systems Division        *
+                        *                        Austin, TX                                  *
+                        *   Modified by        : E&CE Technical Staff, University of Waterloo*
+                        **********************************************************************
+                        
+                        
+                        
+f0000000                MBASE      EQU      0xF0000000    ; Module Base Address
+                        
+                        
+                        
+                        *Serial Port Registers
+f00001c0                UMR10	equ	MBASE+0x1c0	;UART Mode Register 1 (R/W 8 bit)
+                        
+f00001c4                USR0	equ	MBASE+0x1c4	;UART Status Registers (R 8 bits)
+f00001c8                UCR0	equ	MBASE+0x1c8	;UART Command Registers (W 8 bits)
+f00001cc                URB0	equ	MBASE+0x1cc	;UART Receiver Buffers (R 8 bits)
+f00001cc                UTB0	equ	MBASE+0x1cc	;UART Trasmitter Buffers (W 8 bits)
+                        
+f00001d4                UIMR0	equ	MBASE+0x1d4	;UART Interrupt Mask Register (R/W 8 bit)
+                        
+                        *Parallel Port Registers
+f0000004                PAR	equ	MBASE+0x004	;Pin Assignment Register (R/W 16 bits)
+f0000244                PADDR	equ	MBASE+0x244	;Port A Data Direction Register (R/W 16 bits)
+f0000248                PADAT	equ	MBASE+0x248	;Port A Data Register (R/W 16 bits)
+                        
+                        *Timer Register
+f0000140                TMR0	equ	MBASE+0x140	;Timer 0 Mode Register (R/W 16 bits)
+f0000144                TRR0	equ	MBASE+0x144	;Timer 0 Reference Register (R/W 16 bits)
+f0000148                TCR0    equ     MBASE+0x148     ;Timer 0 Capture Register (R 16 bits)
+f000014c                TCN0    equ     MBASE+0x14c     ;Timer 0 Counter (R/W 16 bits)
+f0000151                TER0	equ	MBASE+0x151	;Timer 0 Event Register (R/W 8 bits)
+                        
+f0000180                TMR1    equ     MBASE+0x180     ;Timer 1 Mode Register (R/W 16 bits)
+f0000184                TRR1    equ     MBASE+0x184     ;Timer 1 Reference Register (R/W 16 bits)
+f0000188                TCR1    equ     MBASE+0x188     ;Timer 1 Capture Register (R 16 bits)
+f000018c                TCN1    equ     MBASE+0x18c     ;Timer 1 Counter (R/W 16 bits)
+f0000191                TER1    equ     MBASE+0x191	;Timer 1 Event Register (R/W 8 bits)
+                        
+                        *Interrupt Registers
+f0000040                IPR     equ     MBASE+0x040     ;Interrupt Pending Register (R 32 bits)
+f0000044                IMR		equ	MBASE+0x044	;Interrupt Mask Regiser (R/W 32 bits)
+f000004d                ICR1	equ	MBASE+0x04d	;Interrupt Control Register for Timer 0 (R/W 8 bits)
+f000004e                ICR2    equ     MBASE+0x04e     ;Interrupt Control Register for Timer 1 (R/W 8 bits)_
+f0000050                ICR4	equ	MBASE+0x050	;Interrupt Control Register for UART 0 (R/W 8 bits)
+                        
+10000000                ISR_base        equ     0x10000000
+10000064                ISR_lvl_1       equ     ISR_base+100     Lvl 1 interrupt autovector
+10000068                ISR_lvl_2       equ     ISR_base+104     Lvl 2 interrupt autovector
+1000006c                ISR_lvl_3       equ     ISR_base+108     Lvl 3 interrupt autovector
+10000070                ISR_lvl_4       equ     ISR_base+112     Lvl 4 interrupt autovector
+10000074                ISR_lvl_5       equ     ISR_base+116     Lvl 5 interrupt autovector
+10000078                ISR_lvl_6       equ     ISR_base+120     Lvl 6 interrupt autovector
+1000007c                ISR_lvl_7       equ     ISR_base+124     Lvl 7 interrupt autovector
+                        
+                        		
+10200000                PROGRAM         equ     $10200000 ; Assign address information for label PROGRAM
+10210000                OPERAND         equ     $10210000 ; Assign address information for label OPERAND
+10211000                DELAY_TIME		equ		$10211000 ; Assign address information for label DELAY_TIME
+10220000                BUFFER          equ     $10220000 ; Assign address information for label BUFFER
+10230000                STACK           equ     $10230000 ; Assign address information for label STACK
+                        
+                        ; CR and LF are used by the terminal emulator software to produce a new line
+0000000d                CR              equ     $0D ; Returns the cursor to the beginning of the line
+0000000a                LF              equ     $0A ; Moves the cursor to the next line
+                        *******************************************************************************************
+00000000 1e3c 0005       move.b	#%0101,D7
+00000004 13c7 f000 01c8  move.b	D7,UCR0 ; Enable receiver and transmitter enable for serial interfacing
+0000000a 4287            clr	D7
+                        *******************************************************************************************
+                        
+10210000                                org     OPERAND
+                        
+10210000 4d61 696e 204d PROMPT          dc.b "Main Menu:",CR,LF ; menu message
+         656e 753a 0d0a
+1021000c 302e 2052 6574 				dc.b "0. Return to Monitor",CR,LF ; menu message
+         7572 6e20 746f
+         204d 6f6e 6974
+         6f72 0d0a
+10210022 312e 2043 6c6f 				dc.b "1. Clock Display",CR,LF ; menu message
+         636b 2044 6973
+         706c 6179 0d0a
+10210034 322e 2045 6e74 				dc.b "2. Enter Clock Mode",CR,LF ; menu message
+         6572 2043 6c6f
+         636b 204d 6f64
+         650d 0a
+10210049 332e 2045 6e74 				dc.b "3. Enter Calculator Mode",0 ; menu message
+         6572 2043 616c
+         6375 6c61 746f
+         7220 4d6f 6465
+         00
+                        
+10210062 456e 7465 7220 PROMPT1			dc.b "Enter a number from 0 to 9999:",0 	; message when user is supposed to enter a number
+         6120 6e75 6d62
+         6572 2066 726f
+         6d20 3020 746f
+         2039 3939 393a
+         00
+10210081 456e 7465 7220 PROMPT2			dc.b "Enter an operator (+,-,*,^):",0 		; message when user is supposed to enter an operator
+         616e 206f 7065
+         7261 746f 7220
+         282b 2c2d 2c2a
+         2c5e 293a 00
+1021009e 4f76 6572 666c PROMPT3			dc.b "Overflow/Underflow error",0			; overflow/underflow message
+         6f77 2f55 6e64
+         6572 666c 6f77
+         2065 7272 6f72
+         00
+102100b7 496e 7661 6c69 PROMPT4			dc.b "Invalid input",0 						; message given when input is invalid
+         6420 696e 7075
+         7400
+102100c5 456e 7465 7220 PROMPT5			dc.b "Enter 0 to exit, enter 1 to stay in calculator mode.",0	; message when calculator prompts the user to exit
+         3020 746f 2065
+         7869 742c 2065
+         6e74 6572 2031
+         2074 6f20 7374
+         6179 2069 6e20
+         6361 6c63 756c
+         6174 6f72 206d
+         6f64 652e 00
+                        					
+10200000                				org     PROGRAM
+10200000 4ff9 1023 0000 				lea     STACK,a7
+10200006 4ef9 1020 04a0 				jmp     start 
+                        
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+						;;;;;;;;;;;;Input...;;;;;;;;;;;;
+                        ;;;;;;;;;;;;For keyboard...;;;;;;;;;;;
+                        in_string	; All taken from lab1 source code
+1020000c 2f01           				move.l  D1,-(A7)
+1020000e 2f02           				move.l  D2,-(A7)
+10200010 2f09           				move.l  A1,-(A7)
+10200012 7400           				move.l  #0, D2
+10200014 4eb9 1020 004a in_string_loop	jsr 	in_char
+1020001a 4a81           				tst.l   D1
+1020001c 67f6           				beq     in_string_loop
+1020001e b2bc 0000 000d 				cmp.l   #CR,D1
+10200024 6700 0012      				beq.w   exit_in_string
+10200028 b2bc 0000 000a 				cmp.l   #LF,D1
+1020002e 6700 0008      				beq.w   exit_in_string
+10200032 12c1           				move.b  D1,(A1)+
+10200034 5282           				add.l   #1,D2
+10200036 60dc           				bra     in_string_loop
+                        				
+10200038 4a82           exit_in_string	tst.l   D2
+1020003a 6700 0464      				beq     menu
+1020003e 12bc 0000      				move.b	#0,(A1)
+                        				
+10200042 225f           				move.l	(A7)+,A1
+10200044 241f           				move.l	(A7)+,D2
+10200046 221f           				move.l	(A7)+,D1
+10200048 4e75           				rts
+                        
+                        in_char	; Takes input from user
+1020004a 2f00           				move.l  D0,-(A7)
+1020004c 4280           				clr.l	D0
+                        ;;;;;;;;;;;;;;;To replace Trap #15;;;;;;;;;;;;;;;
+1020004e 1039 f000 01c4 WAIT_RECEIVER	move.b	USR0,D0
+10200054 0800 0000      				btst.b	#0,D0			; test if a key is pressed
+10200058 67f4           				beq		WAIT_RECEIVER	; wait for key to be pressed
+1020005a 1239 f000 01cc 				move.b	URB0,D1			; record key press into D1
+                        ;;;;;;;;;;;;;;;To replace Trap #15;;;;;;;;;;;;;;;
+10200060 c2bc 0000 007f 				and.l 	#$7F,D1
+10200066 6100 0222      				bsr 	out_char 		; Echo the character back to the user
+1020006a 201f           				move.l	(A7)+,D0
+1020006c 4e75           				rts
+                        
+                        ;;;;;;;;;For keypad...;;;;;;;
+                        in_string_keypad
+1020006e 2f01           				move.l 	D1,-(A7)		; put D1 in stack
+10200070 2f02           				move.l 	D2,-(A7)		; put D2 in stack
+10200072 2f09           				move.l 	A1,-(A7)		; put A1 in stack
+10200074 7400           				move.l 	#0, D2 			; Keep character count
+                        in_string_loop_keypad
+10200076 4eb9 1020 00c6 				jsr 	in_keypad		; Get input from keypad
+1020007c b2bc 0000 000a 				cmp.l 	#LF,D1			; See if user has pressed enter
+10200082 6700 0012      				beq.w 	exit_in_string_keypad ; if yes, user has finished typing word
+10200086 b2bc 0000 000d 				cmp.l 	#CR,D1			; See if user has pressed clear
+1020008c 6700 001a      				beq		clear_operation	; If yes, proceed to clear everything
+10200090 12c1           				move.b 	D1,(A1)+
+10200092 5282           				add.l 	#1, D2			; Increase the character count
+10200094 60e0           				bra 	in_string_loop_keypad	; Keep looping until user finished typing word (B)
+                        exit_in_string_keypad
+10200096 4a82           				tst.l 	D2
+10200098 6700 0406      				beq 	menu 	; User pressed enter without inputing anything, goes back to main
+1020009c 12bc 0000      				move.b	#0,(A1)
+102000a0 225f           				move.l 	(A7)+,A1
+102000a2 241f           				move.l 	(A7)+,D2
+102000a4 221f           				move.l 	(A7)+,D1
+102000a6 4e75           				rts						; go back to main, reverse string and display on monitor
+                        
+                        ;;;;;;;;;;;clear for keypad;;;;;;;;;;;;
+                        clear_operation
+102000a8 4a82           				tst.l	D2
+102000aa 6700 000e      				beq		no_input ; If no input, proceed to no_input
+102000ae 1221           				move.b	-(A1),D1 ; clear everything
+102000b0 5382           				sub.l	#1,D2
+102000b2 b4bc 0000 0000 				cmp.l	#0,D2
+102000b8 66ee           				bne		clear_operation ; Keep looping until everything is cleared
+                        				
+102000ba 12bc 0000      no_input		move.b	#0,(A1)
+102000be 4281           				clr.l	D1
+102000c0 4ef9 1020 0076 				jmp		in_string_loop_keypad
+                        
+                        ;;;;;;;;;Parallel interfacing for keypad;;;;;;;;;;
+                        in_keypad
+102000c6 2f0e           				move.l	A6,-(A7)
+102000c8 2f0d           				move.l	A5,-(A7)
+102000ca 2f00           				move.l	D0,-(A7)
+102000cc 2f07           				move.l	D7,-(A7)
+102000ce 4280           				clr.l	D0
+102000d0 4281           				clr.l	D1
+102000d2 4287           				clr.l	D7
+102000d4 4279 f000 0004 				clr.w	PAR				; Initialize PAR with a word of zeros
+                        ;;;;;;;;;;;;Get row;;;;;;;;;;;;
+102000da 3e3c fff0      				move.w	#$FFF0,D7		
+102000de 33c7 f000 0244 				move.w	D7,PADDR		; Set column pins as outputs(1) and row pins as inputs(0)
+102000e4 33c7 f000 0248 				move.w	D7,PADAT		; Drive column pins high(1) and row pins low(0)
+102000ea 4df9 1021 1000 				lea		DELAY_TIME,A6
+102000f0 2cbc 0000 0001 				move.l	#01,(A6)		; Execute a small 1ms time delay to give time for the voltage on the keypad wires to stabilize.
+102000f6 6100 0144      				bsr		CALCULATE_DELAY	; Make a delay
+102000fa 3039 f000 0248 ROW_INPUT		move.w	PADAT,D0
+10200100 b0bc 0000 fff0 				cmp.l	#$FFF0,D0		; wait for valid button press
+10200106 67f2           				beq		ROW_INPUT
+10200108 2cbc 0000 001e 				move.l	#30,(A6)		; set 30ms delay to check for debouncing
+1020010e 6100 012c      				bsr		CALCULATE_DELAY
+10200112 3039 f000 0248 				move.w	PADAT,D0		; Retrieve row input
+                        ;;;;;;;;;;;;Get column;;;;;;;;;;
+10200118 3e3c ff0f      				move.W	#$FF0F,D7
+1020011c 33c7 f000 0244 				move.w	D7,PADDR		; Now set column pins as inputs(0) and row pins as outputs(1)
+10200122 33c7 f000 0248 				move.w	D7,PADAT		; Drive column pins low(0) and row pins high(1)
+10200128 2cbc 0000 0001 				move.l	#01,(A6)		; set 1ms delay
+1020012e 6100 010c      				bsr		CALCULATE_DELAY
+10200132 3239 f000 0248 				move.w	PADAT,D1		; Retrieve column input
+10200138 c280           				and.l	D0,D1
+1020013a 6100 0020      				bsr		LOOKUP_CHARACTER
+                        				
+                        STOP_AUTO_REPEAT
+1020013e 4287           				clr.l	D7
+10200140 3e39 f000 0248 				move.w	PADAT,D7
+10200146 bebc 0000 ff0f 				cmp.l	#$FF0F,D7
+1020014c 66f0           				bne		STOP_AUTO_REPEAT ; Keep looping until no input is received
+                        				
+1020014e 6100 013a      				bsr		out_char	; print out the character
+10200152 2e1f           				move.l	(A7)+,D7
+10200154 201f           				move.l	(A7)+,D0
+10200156 2a5f           				move.l	(A7)+,A5
+10200158 2c5f           				move.l	(A7)+,A6
+1020015a 4e75           				rts
+                        				
+                        ;;;;;;;;;;;;;;Determines button pressed;;;;;;;;;;;;;;;
+                        LOOKUP_CHARACTER
+1020015c b2bc 0000 ff28 				cmp	#$FF28,D1 ; 0
+10200162 6700 0098      				beq	ZERO
+10200166 b2bc 0000 ff11 				cmp	#$FF11,D1 ; 1
+1020016c 6700 0092      				beq	ONE
+10200170 b2bc 0000 ff21 				cmp	#$FF21,D1 ; 2
+10200176 6700 008c      				beq	TWO
+1020017a b2bc 0000 ff41 				cmp	#$FF41,D1 ; 3
+10200180 6700 0086      				beq	THREE
+10200184 b2bc 0000 ff12 				cmp	#$FF12,D1 ; 4
+1020018a 6700 0080      				beq	FOUR
+1020018e b2bc 0000 ff22 				cmp	#$FF22,D1 ; 5
+10200194 6700 007a      				beq	FIVE
+10200198 b2bc 0000 ff42 				cmp	#$FF42,D1 ; 6
+1020019e 6700 0074      				beq	SIX
+102001a2 b2bc 0000 ff14 				cmp	#$FF14,D1 ; 7
+102001a8 6700 006e      				beq	SEVEN
+102001ac b2bc 0000 ff24 				cmp	#$FF24,D1 ; 8
+102001b2 6700 0068      				beq	EIGHT
+102001b6 b2bc 0000 ff44 				cmp	#$FF44,D1 ; 9
+102001bc 6700 0062      				beq	NINE
+102001c0 b2bc 0000 ff18 				cmp	#$FF18,D1 ; Clear
+102001c6 6700 005c      				beq	A
+102001ca b2bc 0000 ff48 				cmp	#$FF48,D1 ; Enter
+102001d0 6700 0056      				beq	B
+102001d4 b2bc 0000 ff81 				cmp	#$FF81,D1 ; +
+102001da 6700 0050      				beq	C
+102001de b2bc 0000 ff82 				cmp	#$FF82,D1 ; -
+102001e4 6700 004a      				beq	D
+102001e8 b2bc 0000 ff84 				cmp	#$FF84,D1 ; *
+102001ee 6700 0044      				beq	E
+102001f2 b2bc 0000 ff88 				cmp	#$FF88,D1 ; ^
+102001f8 6700 003e      				beq	F
+102001fc 7230           ZERO			move.l	#$30,D1
+102001fe 4e75           				rts
+10200200 7231           ONE				move.l	#$31,D1
+10200202 4e75           				rts
+10200204 7232           TWO				move.l	#$32,D1
+10200206 4e75           				rts
+10200208 7233           THREE			move.l	#$33,D1
+1020020a 4e75           				rts
+1020020c 7234           FOUR			move.l	#$34,D1
+1020020e 4e75           				rts
+10200210 7235           FIVE			move.l	#$35,D1
+10200212 4e75           				rts
+10200214 7236           SIX				move.l	#$36,D1
+10200216 4e75           				rts
+10200218 7237           SEVEN			move.l	#$37,D1
+1020021a 4e75           				rts
+1020021c 7238           EIGHT			move.l	#$38,D1
+1020021e 4e75           				rts
+10200220 7239           NINE			move.l	#$39,D1
+10200222 4e75           				rts
+10200224 720d           A				move.l	#$0D,D1
+10200226 4e75           				rts
+10200228 720a           B				move.l	#$0A,D1
+1020022a 4e75           				rts
+1020022c 722b           C				move.l	#$2B,D1
+1020022e 4e75           				rts
+10200230 722d           D				move.l	#$2D,D1
+10200232 4e75           				rts
+10200234 722a           E				move.l	#$2A,D1
+10200236 4e75           				rts
+10200238 725e           F				move.l	#$5E,D1
+1020023a 4e75           				rts
+                        				
+                        ;(A6) should contain the # of ms delay
+                        
+                        CALCULATE_DELAY
+1020023c 2f0e           				move.l	A6,-(A7)
+1020023e 2f00           				move.l	D0,-(A7)
+10200240 203c 0000 4650 				move.l	#18000,D0
+10200246 4c16 0000      				mulu.l	(A6),D0			; delay of 1ms*(A6)
+1020024a 5380           DELAYTIME		subq.l	#01,D0			; loop appropriate times to create a delay
+1020024c b0bc 0000 0000 				cmp.l	#0,D0
+10200252 67f6           				beq		DELAYTIME
+10200254 201f           				move.l	(A7)+,D0
+10200256 2c5f           				move.l	(A7)+,A6
+10200258 4e75           				rts
+                       ;;;;;;;;;;;;Input...;;;;;;;;;;;;
+					   
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+						;;;;;;;;;;;Output...;;;;;;;;;;;
+                        out_crlf ; go to newline subroutine, taken from lab1 source code
+1020025a 2f01           				move.l   D1,-(A7)
+1020025c 323c 000d      				move     #CR,D1
+10200260 4eb9 1020 028a 				jsr      out_char 
+10200266 323c 000a      				move     #LF,D1 
+1020026a 4eb9 1020 028a 				jsr      out_char 
+10200270 221f           				move.l   (A7)+,D1 
+10200272 4e75           				rts 
+                        					
+                        out_string ; output all the characters, taken from lab1 source code
+10200274 2f01           				move.l  D1,-(A7) 
+10200276 2f09           				move.l	A1,-(A7) 
+                        out_next_char
+10200278 1219           				move.b	(A1)+,D1 
+1020027a 4eb9 1020 028a 				jsr		out_char 
+10200280 4a01           				tst.b	D1 
+10200282 66f4           				bne		out_next_char 
+10200284 225f           				move.l	(A7)+,A1 					
+10200286 221f           				move.l	(A7)+,D1 
+10200288 4e75           				rts
+                        					
+                        out_char ; display a character onto monitor
+1020028a 2f00           				move.l	D0,-(A7)
+1020028c 2f02           				move.l	D2,-(A7)
+1020028e 4282           				clr.l	D2
+10200290 4280           				clr.l	D0
+10200292 103c 0004      				move.b	#%0100,D0
+                        ;;;;;;;;;;;;;Replace Trap #15;;;;;;;;;;;;;
+                        WAIT_TRANSMITTER
+10200296 13c0 f000 01c8 				move.b	D0,UCR0			; set “Transmitter Enable” bit(bit 2) in UCR0 to 1
+1020029c 1439 f000 01c4 				move.b	USR0,D2
+102002a2 0802 0002      				btst.b	#2,D2			; test if a key is pressed by checking if bit2 is zero
+102002a6 67ee           				beq		WAIT_TRANSMITTER; wait for key to be pressed
+                        ;;;;;;;;;;;;;Replace Trap #15;;;;;;;;;;;;;
+102002a8 13c1 f000 01cc 				move.b	D1,UTB0			; take content of D1 and store it into UTBO
+102002ae 241f           				move.l	(A7)+,D2
+102002b0 201f           				move.l	(A7)+,D0
+102002b2 4e75           				rts
+                        ;;;;;;;;;;;Output...;;;;;;;;;;;
+						
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+
+                        ;;;;;;;;;;;;;;Overflow/Underflow;;;;;;;;;;;;;
+                        handle_overflow		
+102002b4 2f09           				move.l		A1,-(A7)
+102002b6 43f9 1021 009e 				lea			PROMPT3,A1
+102002bc 61b6           				bsr			out_string
+102002be 619a           				bsr			out_crlf
+102002c0 225f           				move.l		(A7)+,A1
+102002c2 6000 006e      				bra			calculator
+                        				
+                        ;;;;;;;;;;;;;;Overflow/Underflow;;;;;;;;;;;;;
+                        
+                        BIN2DEC
+102002c6 bcbc 0000 270f 				cmp.l		#9999,D6
+102002cc 6ee6           				bgt			handle_overflow
+102002ce 2f0a           				MOVE.L 		A2,-(A7)
+102002d0 2f08           				MOVE.L 		A0,-(A7)
+102002d2 2f06           				MOVE.L 		D6,-(A7)		; D6 contains binary result
+102002d4 2049           				MOVE.L		A1,A0			; points to original string
+                        				
+102002d6 8cfc 000a      ASCII_DEC		DIVU.W		#$000A,D6		; divide binary by 10
+102002da 4846           				SWAP		D6				; move remainder to lower side of D6
+102002dc 0686 0000 0030 				ADD.L		#$0030,D6		; add 0x30 to change to ASCII
+102002e2 12c6           				MOVE.B		D6,(A1)+		; move remainder (byte) into A1
+102002e4 4846           				SWAP		D6				; move quotient to lower side of D6
+102002e6 ccbc 0000 ffff 				AND.L		#$0000FFFF,D6	; clear upper side of D2, leaving only quotient
+102002ec 4a06           				TST.B		D6
+102002ee 66e6           				BNE			ASCII_DEC		; repeat until quotient is 0
+102002f0 12bc 0000      				MOVE.B		#0,(A1)			; add null sign; A1 points to NULL after normal string
+102002f4 247c 1022 0400 				MOVEA.L 	#BUFFER+1024,A2	; A2 points to start of reversed string
+102002fa 264a           				MOVEA.L 	A2,A3
+                        				
+102002fc 14e1           REVERSE_LOOP	MOVE.B		-(A1),(A2)+		; set last letter as first letter of reversed string
+102002fe b1c9           				CMPA.L		A1,A0			; check if we have moved through all characters
+10200300 66fa           				BNE			REVERSE_LOOP	; loop until we go through all characters
+10200302 24bc 0000 0000 				MOVE.L 		#0,(A2)			; place 0 to represent end/null
+                        				; pop stuff out of the stack
+10200308 2c1f           				MOVE.L		(A7)+,D6
+1020030a 205f           				MOVE.L		(A7)+,A0
+1020030c 224b           				MOVEA.L		A3,A1
+1020030e 245f           				MOVE.L		(A7)+,A2
+10200310 4e75           				RTS
+                        
+                        DEC2BIN	; Important Note: D3 would be holding the encoded binary
+                        				; push stuff into stack
+10200312 2f09           				MOVE.L	A1,-(A7)	; points to character
+10200314 2f05           				MOVE.L	D5,-(A7)	; D5 contains ascii string
+10200316 4283           				CLR.L	D3			; clear D3
+                        
+10200318 4285           ASCII_BIN		CLR.L	D5			; clear D5
+1020031a 1a19           				MOVE.B	(A1)+,D5	; take an ascii character
+1020031c 0485 0000 0030 				SUB.L	#$0030,D5	; subtract 0x30 to convert to decimal
+10200322 c6fc 000a      				MULU.W	#010,D3		; multiply current encoded binary by 10
+10200326 d685           				ADD.L	D5,D3		; add digit to current encoded binary
+10200328 4a11           				TST.B	(A1)		; test to see if A1 has reached null yet
+1020032a 66ec           				BNE		ASCII_BIN	; repeat for every character, A1 should point to null at the end
+1020032c 2a1f           				MOVE.L	(A7)+,D5	; pop
+1020032e 225f           				MOVE.L	(A7)+,A1	; pop
+10200330 4e75           				RTS							
+                        
+                        
+                        ;;;;;;;;;;;;;;Calculator;;;;;;;;;;;;;;;;
+                        calculator ; choice 3 subroutine
+                        				; Display "Enter a number from 0 to 9999:"
+10200332 43f9 1021 0062 				lea		PROMPT1,A1
+10200338 6100 ff3a      				bsr.w	out_string 
+1020033c 6100 ff1c      				bsr.w	out_crlf
+                        				; Get the first string
+10200340 43f9 1022 0000 				lea		BUFFER,A1 	
+10200346 6100 fd26      				bsr.w	in_string_keypad 
+1020034a 6100 ff0e      				bsr.w	out_crlf 
+1020034e 61c2           				bsr		DEC2BIN ;turns ascii to binary
+                        				
+10200350 2203           				move.l	D3, D1 ;moves first number to D1
+                        				; Display "Enter a number from 0 to 9999:"
+10200352 43f9 1021 0062 				lea		PROMPT1,A1
+10200358 6100 ff1a      				bsr.w	out_string 
+1020035c 6100 fefc      				bsr.w	out_crlf
+                        				; Get the second string
+10200360 43f9 1022 0000 				lea		BUFFER,A1 	
+10200366 6100 fd06      				bsr.w	in_string_keypad
+1020036a 6100 feee      				bsr.w	out_crlf 
+1020036e 61a2           				bsr		DEC2BIN ;turns ascii to binary
+                        				
+10200370 2403           				move.l	D3, D2 ;moves second number to D2
+                        				; Get the third string, the operator
+10200372 43f9 1021 0081 				lea		PROMPT2,A1
+10200378 6100 fefa      				bsr.w	out_string 
+1020037c 6100 fedc      				bsr.w	out_crlf
+10200380 43f9 1022 0000 				lea		BUFFER,A1 			
+10200386 6100 fce6      				bsr.w	in_string_keypad 	
+1020038a 6100 fece      				bsr.w	out_crlf 
+                        				
+1020038e 1811           				move.b	(A1),D4 ; moves operator to D4
+                        				; checks for which operator D4 is
+                        				; ascii character reference: http://www.pcguide.com/res/tablesASCII-c.html
+                        				; ADD_OPERATION
+10200390 b8bc 0000 002b 				cmp.l	#$002B,D4
+10200396 6700 0064      				beq		ADD_OPERATION
+                        				; SUBTRACT_OPERATION
+1020039a b8bc 0000 002d 				cmp.l	#$002D,D4
+102003a0 6700 007a      				beq		SUBTRACT_OPERATION
+                        				; MULTIPLY_OPERATION
+102003a4 b8bc 0000 002a 				cmp.l	#$002A,D4
+102003aa 6700 00b4      				beq		MULTIPLY_OPERATION
+                        				; POWER_OPERATION
+102003ae b8bc 0000 005e 				cmp.l	#$005E,D4
+102003b4 6700 00ce      				beq		POWER_OPERATION
+                        				; ERROR
+102003b8 43f9 1021 00b7 				lea		PROMPT4,A1 ; gives an error message
+102003be 6100 feb4      				bsr.w	out_string 
+102003c2 6100 fe96      				bsr.w	out_crlf
+                        				
+102003c6 6000 ff6a      				bra		calculator ; returns to beginning
+                        				
+102003ca 43f9 1021 00c5 exit_loop		lea		PROMPT5,A1 ; Ask user if they want to exit the calculator mode
+102003d0 6100 fea2      				bsr.w	out_string 
+102003d4 6100 fe84      				bsr.w	out_crlf
+                        				; Get the string
+102003d8 43f9 1022 0000 				lea		BUFFER,A1 	
+102003de 6100 fc8e      				bsr.w	in_string_keypad 
+102003e2 6100 fe76      				bsr.w	out_crlf 
+                        				
+102003e6 1e11           				move.b	(A1),D7
+                        				; if "0" is pressed, goes back to menu
+102003e8 bebc 0000 0030 				cmp.l	#$0030,D7
+102003ee 6700 00b0      				beq		menu
+                        				; if "1" is pressed, stay in calculator mode
+102003f2 bebc 0000 0031 				cmp.l	#$0031,D7
+102003f8 6700 ff38      				beq		calculator
+                        				
+                        ADD_OPERATION ; Results will be stored to D6
+102003fc 2f01           				move.l	D1,-(A7) ; Push
+102003fe 2f02           				move.l	D2,-(A7) ; Push
+10200400 2f09           				move.l	A1,-(A7) ; Push
+10200402 4286           				clr		D6
+10200404 d481           				add.l	D1,D2 ; Perform addition
+10200406 2c02           				move.l	D2,D6 ; Store answer in D6
+10200408 6100 febc      				bsr		BIN2DEC ; Turn the answer to ascii character
+1020040c 6100 fe66      				bsr		out_string ; Output the answer
+10200410 6100 fe48      				bsr		out_crlf ; Goes to newline
+10200414 225f           				move.l	(A7)+,A1 ; Pop
+10200416 241f           				move.l	(A7)+,D2 ; Pop
+10200418 221f           				move.l	(A7)+,D1; Pop
+1020041a 60ae           				bra		exit_loop
+                        				
+                        SUBTRACT_OPERATION ; Results will be stored to D6
+1020041c 2f01           				move.l	D1,-(A7) ; Push
+1020041e 2f02           				move.l	D2,-(A7) ; Push
+10200420 2f09           				move.l	A1,-(A7) ; Push
+10200422 4286           				clr		D6
+10200424 b481           				cmp.l	D1,D2 ; Check to see if the second number is larger than the first number
+10200426 6e00 001a      				bgt		negative_sub ; branch to negative_sub if yes
+                        				
+1020042a 9282           				sub.l	D2,D1 ; Normal subtractions
+1020042c 2c01           				move.l	D1,D6 ; Perform subtraction
+1020042e 6100 fe96      				bsr		BIN2DEC ; Turn answer into ascii character
+10200432 6100 fe40      				bsr		out_string ; Output the answer
+10200436 6100 fe22      				bsr		out_crlf ; Goes to newline
+1020043a 225f           				move.l	(A7)+,A1 ; Pop
+1020043c 241f           				move.l	(A7)+,D2 ; Pop
+1020043e 221f           				move.l	(A7)+,D1 ; Pop
+10200440 6088           				bra		exit_loop
+                        				
+10200442 9481           negative_sub	sub.l	D1,D2 ; Do negative subtractions
+10200444 2c02           				move.l	D2,D6 ; Perform subtraction
+10200446 6100 fe7e      				bsr		BIN2DEC ; Turn answer into ascii character
+1020044a 133c 002d      				move.b	#$2D,-(A1) ; Prepend a negative sign in front of the answer
+1020044e 6100 fe24      				bsr		out_string ; Output the answer
+10200452 6100 fe06      				bsr		out_crlf ; Goes to newline
+10200456 225f           				move.l	(A7)+,A1 ; Pop
+10200458 241f           				move.l	(A7)+,D2 ; Pop
+1020045a 221f           				move.l	(A7)+,D1 ; Pop
+1020045c 6000 ff6c      				bra		exit_loop
+                        				
+                        MULTIPLY_OPERATION ; to be modified, results will be stored to D6
+10200460 2f01           				move.l	D1,-(A7) ; Push
+10200462 2f02           				move.l	D2,-(A7) ; Push
+10200464 2f09           				move.l	A1,-(A7) ; Push
+10200466 4286           				clr		D6
+10200468 4c01 2002      				mulu.l	D1,D2 ; Perform multiplication
+1020046c 2c02           				move.l	D2,D6 ; Anwswer is stored into D6
+1020046e 6100 fe56      				bsr		BIN2DEC ; Turn answer into ascii character
+10200472 6100 fe00      				bsr		out_string ; Output the answer
+10200476 6100 fde2      				bsr		out_crlf ; Goes to newline
+1020047a 225f           				move.l	(A7)+,A1 ; Pop
+1020047c 241f           				move.l	(A7)+,D2 ; Pop
+1020047e 221f           				move.l	(A7)+,D1 ; Pop
+10200480 6000 ff48      				bra		exit_loop
+                        				
+                        POWER_OPERATION ; Results will be stored to D6
+10200484 4c01 1001      				mulu.l	D1,D1 ; Perform multiplication
+10200488 6192           				bsr		SUBTRACT_OPERATION ; Do subtraction
+                        				
+                        INVALID_CHOICE	; for choice 1 & 2
+1020048a 2f09           				move.l		A1,-(A7)
+1020048c 43f9 1021 00b7 				lea			PROMPT4,A1 ; Output error message
+10200492 6100 fde0      				bsr			out_string
+10200496 6100 fdc2      				bsr			out_crlf
+1020049a 225f           				move.l		(A7)+,A1
+1020049c 6000 0002      				bra			menu ; Goes back to main menu
+                        ;;;;;;;;;;;;;;Calculator;;;;;;;;;;;;;;;;
+                        
+                        ;;;;;;;;;;;;;;Main Menu;;;;;;;;;;;;;;;;;
+                        start			; Important Notes: D5 will store ascii string		
+102004a0 43f9 1021 0000 menu			lea PROMPT,A1 ; point to start of messages
+102004a6 6100 fdcc      				bsr.w out_string ; print messages using out_string
+102004aa 6100 fdae      				bsr.w out_crlf ; go to new line using out_crlf
+102004ae 43f9 1022 0000 				lea BUFFER,A1 ; point to start of buffer
+102004b4 6100 fb56      				bsr.w in_string ; read string and add a trailing NULL
+102004b8 6100 fda0      				bsr.w out_crlf ; go to next line
+102004bc 1a11           				move.b (A1), D5 ;moves ascii string to D5
+                        				
+102004be babc 0000 0033 				cmp.l #$33,D5 ;checks if D5 is equal to 3, branch to calculator mode
+102004c4 6700 fe6c      				beq calculator
+                        				
+102004c8 babc 0000 0031 				cmp.l #$31,D5 ;checks if D5 is equal to 1
+102004ce 67ba           				beq INVALID_CHOICE ; output error msg
+                        				
+102004d0 babc 0000 0032 				cmp.l #$32,D5 ;checks if D5 is equal to 2
+102004d6 67b2           				beq INVALID_CHOICE ; output error msg
+                        				
+102004d8 babc 0000 0030 				cmp.l #$30,D5 ;checks if D5 is equal to 0, exit program if yes
+102004de 66c0           				bne menu ; goes back to menu if no
+102004e0 4e4f           				trap #15
+                        				end
+Assembly successful.

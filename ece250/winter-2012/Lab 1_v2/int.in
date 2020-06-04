@@ -1,0 +1,33 @@
+new
+dequeue!
+empty 1
+size 0
+enqueue 56
+enqueue 78
+enqueue 90
+dequeue 56
+enqueue 123
+dequeue 78
+dequeue 90
+head 123
+dequeue 123
+head! 
+enqueue 1
+enqueue 5
+enqueue 7
+enqueue 9
+enqueue 12
+enqueue 16
+enqueue 22
+enqueue 27
+enqueue 29
+enqueue 31
+size 10
+delete
+new: 1
+enqueue 1
+capacity 1
+enqueue 5
+capacity 2
+delete
+summary

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989179645
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989179692
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989179739
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989179801
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989179848
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989179895
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989179973
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989180035
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989180082
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989180129
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989180160
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989180222
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989180269
+error,log,,,"SOPC design not set.",1349989181564
+error,log,,,"SOPC design not set.",1349989181642
+error,log,,,"CPU module not set.",1349989181673
+error,log,,,"CPU module not set.",1349989181704
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989181751
+error,log,,,"CPU architecture type not set. ",1349989181829
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989181860
+error,log,,,"CPU master group not set.",1349989181907
+error,log,,,"CPU architecture type not set. ",1349989182032
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989182079
+error,log,,,"SOPC design not set.",1349989182126
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989182157

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349981777781
+executed,command,org.eclipse.ui.workbench.texteditor,3.5.0.v20090603,"org.eclipse.ui.edit.text.goto.lineStart",1349981781276
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349981790527
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1349981792367
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1349981794739
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981795955
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981801915
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349981804005
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1349981807281
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349981812959
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349981815643
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981915826
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981921879
+error,log,,,"SOPC design not set.",1349981922159
+error,log,,,"CPU module not set.",1349981922253
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349981922300
+error,log,,,"CPU architecture type not set. ",1349981922331
+error,log,,,"CPU master group not set.",1349981922425
+error,log,,,"SOPC design not set.",1349981922518
+error,log,,,"CPU module not set.",1349981922549
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349981922596
+error,log,,,"CPU architecture type not set. ",1349981922627
+error,log,,,"CPU master group not set.",1349981922659
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349981923735
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349981926934

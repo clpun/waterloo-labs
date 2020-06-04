@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989176354
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989176400
+error,log,,,"CPU architecture type not set. ",1349989176447
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989176494
+error,log,,,"CPU master group not set.",1349989176541
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989176588
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989176666
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989176712
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989176759
+error,log,,,"SOPC design not set.",1349989176790
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989176837
+error,log,,,"CPU module not set.",1349989176884
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989176915
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989176946
+error,log,,,"CPU architecture type not set. ",1349989176993
+error,log,,,"CPU master group not set.",1349989177024
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989177056
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989177087
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989177134
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989177165
+error,log,,,"SOPC design not set.",1349989177196
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989177243
+error,log,,,"CPU module not set.",1349989177274
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989177321
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989177352

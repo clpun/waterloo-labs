@@ -1,0 +1,31 @@
+new
+
+insert 1 3 1.2
+
+mst 1 1.2
+
+mst 3 1.2
+
+mst 4 0
+
+insert 1 2 1.5
+
+insert 2 3 0.4
+
+mst 1 1.6
+
+mst 2 1.6
+
+mst 3 1.6
+
+insert 2 3 0.1
+
+mst 1 1.3
+
+mst 2 1.3
+
+mst 3 1.3
+
+delete
+
+summary

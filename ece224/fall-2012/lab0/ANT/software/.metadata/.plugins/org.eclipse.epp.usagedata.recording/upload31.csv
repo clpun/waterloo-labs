@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981480295
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981480451
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981487066
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981504179
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981504319
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981504460
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981510637
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981510793
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349981510934
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349981516706
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349981534178
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349981551509
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981574488
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981601663
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981610961
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349981660697
+error,log,,,"SOPC design not set.",1349981660931
+error,log,,,"CPU module not set.",1349981661477
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349981661539
+error,log,,,"CPU architecture type not set. ",1349981661586
+error,log,,,"CPU master group not set.",1349981661633
+error,log,,,"SOPC design not set.",1349981661742
+error,log,,,"CPU module not set.",1349981661773
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349981661820
+error,log,,,"CPU architecture type not set. ",1349981661851

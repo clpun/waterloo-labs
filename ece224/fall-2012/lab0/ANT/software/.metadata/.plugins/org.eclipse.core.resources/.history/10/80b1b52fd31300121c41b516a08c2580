@@ -1,0 +1,17 @@
+#include "system.h"
+#include <io.h>
+
+int main (void) {
+	int i;
+	init(6, 8);
+	for (i = 0; i < 100; i++) {
+		while(IORD(PIO_PULSE_BASE, 0) == 0) {}
+		IOWR(PIO_RESPONSE_BASE, 0, 1);
+		IOWR(LED_PIO_BASE, 0, 1);
+		background(200);
+		while(IORD(PIO_PULSE_BASE, 0) == 1) {}
+		IOWR(PIO_RESPONSE_BASE, 0, 0);
+		IOWR(LED_PIO_BASE, 0, 0);
+	}
+	finalize();
+}

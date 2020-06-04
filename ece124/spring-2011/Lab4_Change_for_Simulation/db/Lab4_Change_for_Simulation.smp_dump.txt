@@ -1,0 +1,7 @@
+
+State Machine - |Lab4_Change_for_Simulation|state
+Name state.Red1_Amber state.Red1_Green2 state.Amber_Red2 state.Green1_Red2 
+state.Green1_Red2 0 0 0 0 
+state.Amber_Red2 0 0 1 1 
+state.Red1_Green2 0 1 0 1 
+state.Red1_Amber 1 0 0 1 

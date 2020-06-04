@@ -1,0 +1,36 @@
+LIBRARY ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+
+ENTITY CarControlCircuit IS PORT(
+
+key : IN std_logic_vector(3 downto 0); -- 4 push buttons on the board
+sw : IN std_logic_vector(5 downto 0); -- use 6 of 18 dip switches on the board - 0 when down towards edge of board
+ledr : OUT std_logic_vector(1 downto 0); -- Red LED
+ledg : OUT std_logic_vector(1 downto 0) -- Green LED
+);
+END CarControlCircuit;
+
+ARCHITECTURE Circuit OF CarControlCircuit IS
+
+signal gas, clutch, brake, override: std_logic; -- Input signals declaration. 
+signal BrakeLight, GasControlMotor: std_logic; -- Output signals declararion.
+
+BEGIN
+
+gas <= NOT(key(0)); -- Toggle the three signals since the KEY buttons on the DE2 board are inverted.
+clutch <= NOT(key(1));
+brake <= NOT(key(2));
+override <= sw(1); -- Override will take the signal of sw(1).
+
+ledr(0) <= BrakeLight; -- ledr(0) will take the signal of BrakeLight.
+ledg(0) <= GasControlMotor; -- ledg(0) will take the signal of GasControlMotor.
+
+with brake select
+BrakeLight <= override when '0', -- When the brake is off, the brake light will take the override signal.
+			  '1' when others; -- The brake light will be turned on when the brake is on.
+			  
+with clutch select
+GasControlMotor <= '0' when '1', -- When the clutch is on, the gas control motor will be turned off.
+					gas AND (NOT brake) AND (NOT override) when others; -- When clutch is off, the state of the gas control motor is depended on this condition.
+END Circuit;

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"CPU module not set.",1349989019112
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989019143
+error,log,,,"CPU architecture type not set. ",1349989019237
+error,log,,,"CPU master group not set.",1349989019268
+error,log,,,"SOPC design not set.",1349989019455
+error,log,,,"CPU module not set.",1349989019487
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989019518
+error,log,,,"CPU architecture type not set. ",1349989019565
+error,log,,,"CPU master group not set.",1349989019596
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349989020719
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349989025837
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349989034734
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349989034781
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349989034827
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349989035061
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349989037323
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349989039086
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349989113639
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349989118303
+started,bundle,org.eclipse.ui.externaltools,3.2.0.v20090504,"org.eclipse.ui.externaltools",1349989144452
+error,log,,,"SOPC design not set.",1349989150317
+error,log,,,"CPU module not set.",1349989150348
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989150395
+error,log,,,"CPU architecture type not set. ",1349989150426
+error,log,,,"CPU master group not set.",1349989150473

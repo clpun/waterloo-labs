@@ -1,0 +1,39 @@
+*** Creating Trace Output File 'rtx_nolib_demo_stu.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"svc_table.o"'
+### List of Objects: adding '"hal_cm3.o"'
+### List of Objects: adding '"rt_event.o"'
+### List of Objects: adding '"rt_list.o"'
+### List of Objects: adding '"rt_mailbox.o"'
+### List of Objects: adding '"rt_mem.o"'
+### List of Objects: adding '"rt_membox.o"'
+### List of Objects: adding '"rt_mutex.o"'
+### List of Objects: adding '"rt_robin.o"'
+### List of Objects: adding '"rt_semaphore.o"'
+### List of Objects: adding '"rt_system.o"'
+### List of Objects: adding '"rt_task.o"'
+### List of Objects: adding '"rt_time.o"'
+### List of Objects: adding '"rt_timer.o"'
+### List of Objects: adding '"startup_lpc17xx.o"'
+### List of Objects: adding '"retarget.o"'
+### List of Objects: adding '"rtx_conf_cm.o"'
+### List of Objects: adding '"serial.o"'
+### List of Objects: adding '"system_lpc17xx.o"'
+### List of Objects: adding '"main.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "svc_table.o" "hal_cm3.o" "rt_event.o" "rt_list.o" "rt_mailbox.o" "rt_mem.o" "rt_membox.o" "rt_mutex.o" "rt_robin.o" "rt_semaphore.o" "rt_system.o" "rt_task.o" "rt_time.o" "rt_timer.o" "startup_lpc17xx.o" "retarget.o" "rtx_conf_cm.o" "serial.o" "system_lpc17xx.o" "main.o" 
+--strict --scatter "rtx_nolib_demo_stu.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\rtx_nolib_demo_stu.map" -o rtx_nolib_demo_stu.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'rtx_nolib_demo_stu.axf'
+### ADS-LD Command File: 'rtx_nolib_demo_stu.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'rtx_nolib_demo_stu.lnp', Handle=0x00000300
+### Writing '.lnp' file
+### ADS-LD Command file 'rtx_nolib_demo_stu.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"SOPC design not set.",1349977021267
+error,log,,,"CPU module not set.",1349977021314
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349977021345
+error,log,,,"CPU architecture type not set. ",1349977021392
+error,log,,,"CPU master group not set.",1349977021423
+error,log,,,"Expected base address of system ID component is undefined.",1349977021455
+error,log,,,"SOPC design not set.",1349977021501
+error,log,,,"CPU module not set.",1349977021533
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349977021579
+error,log,,,"CPU architecture type not set. ",1349977021611
+error,log,,,"CPU master group not set.",1349977021657
+error,log,,,"Expected base address of system ID component is undefined.",1349977021689
+started,bundle,com.altera.debug.cdi.gdb.plugin,10.1.0.153,"com.altera.debug.cdi.gdb.plugin",1349977021704
+error,log,,,"A project name must be selected.",1349977021829
+error,log,,,"Expected base address of system ID component is undefined.",1349977021860
+error,log,,,"A project name must be selected.",1349977021938
+error,log,,,"A project name must be selected.",1349977022110
+error,log,,,"Expected base address of system ID component is undefined.",1349977022141
+error,log,,,"A project name must be selected.",1349977022188
+error,log,,,"A project name must be selected.",1349977022235
+error,log,,,"Expected base address of system ID component is undefined.",1349977022266
+error,log,,,"A project name must be selected.",1349977022328
+error,log,,,"A project name must be selected.",1349977022359
+error,log,,,"Expected base address of system ID component is undefined.",1349977022406
+error,log,,,"A project name must be selected.",1349977022469

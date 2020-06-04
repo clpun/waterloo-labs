@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\sim\svc_table.o" ".\sim\hal_cm3.o" ".\sim\rt_event.o" ".\sim\rt_list.o" ".\sim\rt_mailbox.o" ".\sim\rt_mem.o" ".\sim\rt_membox.o" ".\sim\rt_mutex.o" ".\sim\rt_robin.o" ".\sim\rt_semaphore.o" ".\sim\rt_system.o" ".\sim\rt_task.o" ".\sim\rt_time.o" ".\sim\rt_timer.o" ".\sim\startup_lpc17xx.o" ".\sim\retarget.o" ".\sim\rtx_conf_cm.o" ".\sim\serial.o" ".\sim\system_lpc17xx.o" ".\sim\main.o" --strict --scatter ".\SIM\rtx_nolib_demo_stu.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\SIM\lst\rtx_nolib_demo_stu.map" -o ".\SIM\rtx_nolib_demo_stu.axf"

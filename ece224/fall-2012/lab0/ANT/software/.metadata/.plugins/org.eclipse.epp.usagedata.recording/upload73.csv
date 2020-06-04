@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989174279
+error,log,,,"CPU architecture type not set. ",1349989174326
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989174357
+error,log,,,"CPU master group not set.",1349989174404
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989174450
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989174497
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989174544
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989174606
+error,log,,,"SOPC design not set.",1349989174653
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989174684
+error,log,,,"CPU module not set.",1349989174716
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989174762
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349989174809
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989174840
+error,log,,,"CPU architecture type not set. ",1349989174872
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989174903
+error,log,,,"CPU master group not set.",1349989174950
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989174981
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989175012
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989175059
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989175106
+error,log,,,"Connected system ID hash not found on target at expected base address.",1349989175137
+error,log,,,"SOPC design not set.",1349989175184
+error,log,,,"Connected system timestamp not found on target at expected base address.",1349989175215
+error,log,,,"CPU module not set.",1349989175262

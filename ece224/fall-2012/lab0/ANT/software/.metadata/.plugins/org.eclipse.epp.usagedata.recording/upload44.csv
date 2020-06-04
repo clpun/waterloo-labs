@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349983874757
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983892541
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349983898469
+error,log,,,"SOPC design not set.",1349983898952
+error,log,,,"CPU module not set.",1349983899030
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349983899062
+error,log,,,"CPU architecture type not set. ",1349983899093
+error,log,,,"CPU master group not set.",1349983899140
+error,log,,,"SOPC design not set.",1349983899249
+error,log,,,"CPU module not set.",1349983899280
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349983899327
+error,log,,,"CPU architecture type not set. ",1349983899358
+error,log,,,"CPU master group not set.",1349983899405
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349983900450
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349983904149
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349983905808
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349983916403
+executed,command,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.commands.Resume",1349983916496
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349983921582
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349983949677
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349983954825
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349983967207
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349983973775
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349983987305
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349983996260

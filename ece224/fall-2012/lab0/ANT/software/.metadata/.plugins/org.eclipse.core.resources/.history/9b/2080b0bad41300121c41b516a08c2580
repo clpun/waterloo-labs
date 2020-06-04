@@ -1,0 +1,23 @@
+#include "system.h"
+#include <io.h>
+
+int main (void) {
+	int i, x, y, z;
+	for (x = 4; x < 10; x++) {
+		for (y = 4; y < 12; y++) {
+			for (z = 100; z < 500; z += 100) {
+				init(x, y);
+				for (i = 0; i < 100; i++) {
+					while(IORD(PIO_PULSE_BASE, 0) == 0) {}
+					IOWR(PIO_RESPONSE_BASE, 0, 1);
+					//IOWR(LED_PIO_BASE, 0, 1);
+					background(z);
+					while(IORD(PIO_PULSE_BASE, 0) == 1) {}
+					IOWR(PIO_RESPONSE_BASE, 0, 0);
+					//IOWR(LED_PIO_BASE, 0, 0);
+				}
+				finalize();
+			}
+		}
+	}
+}

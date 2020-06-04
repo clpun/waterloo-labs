@@ -1,0 +1,365 @@
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+
+                        		CPU	5307
+                        
+10200000                PROGRAM         equ     $10200000 ; Assign address information for label PROGRAM
+10210000                OPERAND         equ     $10210000 ; Assign address information for label OPERAND
+10220000                BUFFER          equ     $10220000 ; Assign address information for label BUFFER
+10230000                STACK           equ     $10230000 ; Assign address information for label STACK
+                        
+                        ; CR and LF are used by the terminal emulator software to produce a new line
+0000000d                CR              equ     $0D ; Returns the cursor to the beginning of the line
+0000000a                LF              equ     $0A ; Moves the cursor to the next line
+                        
+10210000                                org     OPERAND
+                        
+                        
+10210000 4d61 696e 204d PROMPT          dc.b "Main Menu:",CR,LF ; menu message
+         656e 753a 0d0a
+1021000c 302e 2052 6574 				dc.b "0. Return to Monitor",CR,LF ; menu message
+         7572 6e20 746f
+         204d 6f6e 6974
+         6f72 0d0a
+10210022 312e 2043 6c6f 				dc.b "1. Clock Display",CR,LF ; menu message
+         636b 2044 6973
+         706c 6179 0d0a
+10210034 322e 2045 6e74 				dc.b "2. Enter Clock Mode",CR,LF ; menu message
+         6572 2043 6c6f
+         636b 204d 6f64
+         650d 0a
+10210049 332e 2045 6e74 				dc.b "3. Enter Calculator Mode",0 ; menu message
+         6572 2043 616c
+         6375 6c61 746f
+         7220 4d6f 6465
+         00
+                        
+10210062 456e 7465 7220 PROMPT1			dc.b "Enter a number from 0 to 9999:",0 	; message when user is supposed to enter a number
+         6120 6e75 6d62
+         6572 2066 726f
+         6d20 3020 746f
+         2039 3939 393a
+         00
+10210081 456e 7465 7220 PROMPT2			dc.b "Enter an operator (+,-,*,^):",0 		; message when user is supposed to enter an operator
+         616e 206f 7065
+         7261 746f 7220
+         282b 2c2d 2c2a
+         2c5e 293a 00
+1021009e 4f76 6572 666c PROMPT3			dc.b "Overflow/Underflow error",0						; overflow message
+         6f77 2f55 6e64
+         6572 666c 6f77
+         2065 7272 6f72
+         00
+102100b7 496e 7661 6c69 PROMPT4			dc.b "Invalid input",0 						; message given when input is invalid
+         6420 696e 7075
+         7400
+102100c5 446f 2079 6f75 PROMPT5			dc.b "Do you want to exit the program? y/n",0								; message when calculator prompts the user to exit
+         2077 616e 7420
+         746f 2065 7869
+         7420 7468 6520
+         7072 6f67 7261
+         6d3f 2079 2f6e
+         00
+                        					
+10200000                				org     PROGRAM
+10200000 4ff9 1023 0000 				lea     STACK,a7
+10200006 4ef9 1020 0284 				jmp     start 
+                        
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+						;;;;;;;;;;;;;;;Input...;;;;;;;;;;;;;;
+                        in_string
+1020000c 2f01           				move.l  D1,-(A7)
+1020000e 2f02           				move.l  D2,-(A7)
+10200010 2f09           				move.l  A1,-(A7)
+10200012 7400           				move.l  #0, D2
+10200014 4eb9 1020 004a in_string_loop	jsr 	in_char
+1020001a 4a81           				tst.l   D1
+1020001c 67f6           				beq     in_string_loop
+1020001e b2bc 0000 000d 				cmp.l   #CR,D1
+10200024 6700 0012      				beq.w   exit_in_string
+10200028 b2bc 0000 000a 				cmp.l   #LF,D1
+1020002e 6700 0008      				beq.w   exit_in_string
+10200032 12c1           				move.b  D1,(A1)+
+10200034 5282           				add.l   #1, D2
+10200036 60dc           				bra     in_string_loop
+                        					
+10200038 4a82           exit_in_string	tst.l   D2
+1020003a 6700 0248      				beq     menu
+1020003e 12bc 0000      				move.b	#0,(A1)
+                        				
+10200042 225f           				move.l	(A7)+,A1
+10200044 241f           				move.l	(A7)+,D2
+10200046 221f           				move.l	(A7)+,D1
+10200048 4e75           				rts
+                        
+                        in_char	; Takes input from user
+1020004a 2f00           				move.l  D0,-(A7) 
+1020004c 7010           				move.l  #$0010,d0 
+1020004e 4e4f           				TRAP    #15 
+10200050 c2bc 0000 007f 				and.l   #$7F,d1 
+10200056 6100 0036      				bsr     out_char
+                        					
+1020005a 201f           				move.l  (A7)+,D0
+1020005c 4e75           				rts 
+                        ;;;;;;;;;;;;;;;Input...;;;;;;;;;;;;;;
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+						;;;;;;;;;;;;;;;Output...;;;;;;;;;;;;;;;
+                        out_crlf ; go to newline subroutine
+1020005e 2f01           				move.l   D1,-(A7)
+10200060 323c 000d      				move     #CR,D1
+10200064 4eb9 1020 008e 				jsr      out_char 
+1020006a 323c 000a      				move     #LF,D1 
+1020006e 4eb9 1020 008e 				jsr      out_char 
+10200074 221f           				move.l   (A7)+,D1 
+10200076 4e75           				rts 
+                        					
+                        out_string ; output all the characters
+10200078 2f01           				move.l  D1,-(A7) 
+1020007a 2f09           				move.l	A1,-(A7) 
+                        out_next_char
+1020007c 1219           				move.b   (A1)+,D1 
+1020007e 4eb9 1020 008e 				jsr      out_char 
+10200084 4a01           				tst.b    D1 
+10200086 66f4           				bne      out_next_char 
+10200088 225f           				move.l   (A7)+,A1 					
+1020008a 221f           				move.l   (A7)+,D1 
+1020008c 4e75           				rts
+                        					
+                        out_char ; display a character onto monitor
+1020008e 2f00           				move.l  D0,-(A7)
+10200090 7013           				move.l  #$0013,d0 
+10200092 4e4f           				TRAP    #15
+10200094 201f           				move.l  (A7)+,D0 
+10200096 4e75           				rts
+                        ;;;;;;;;;;;;;;;Output...;;;;;;;;;;;;;;;
+cfasm ColdFire Assembler version 2.92 (07 Jun 2005)
+Copyright (C) 1998-2005 Austex Software. All rights reserved.
+
+                        ;;;;;;;;;;;;;;Overflow/Underflow;;;;;;;;;;;;;
+                        handle_overflow		
+10200098 2f09           				move.l		A1,-(A7)
+1020009a 43f9 1021 009e 				lea			PROMPT3,A1
+102000a0 61d6           				bsr			out_string
+102000a2 61ba           				bsr			out_crlf
+102000a4 225f           				move.l		(A7)+,A1
+102000a6 6000 006e      				bra			calculator
+                        				
+                        ;;;;;;;;;;;;;;Overflow/Underflow;;;;;;;;;;;;;
+                        
+                        BIN2DEC
+102000aa bcbc 0000 270f 				cmp.l		#9999,D6
+102000b0 6ee6           				bgt			handle_overflow
+102000b2 2f0a           				MOVE.L 		A2,-(A7)
+102000b4 2f08           				MOVE.L 		A0,-(A7)
+102000b6 2f06           				MOVE.L 		D6,-(A7)		; D6 contains binary result
+102000b8 2049           				MOVE.L		A1,A0			; points to original string
+                        				
+102000ba 8cfc 000a      ASCII_DEC		DIVU.W		#$000A,D6		; divide binary by 10
+102000be 4846           				SWAP		D6				; move remainder to lower side of D6
+102000c0 0686 0000 0030 				ADD.L		#$0030,D6		; add 0x30 to change to ASCII
+102000c6 12c6           				MOVE.B		D6,(A1)+		; move remainder (byte) into A1
+102000c8 4846           				SWAP		D6				; move quotient to lower side of D6
+102000ca ccbc 0000 ffff 				AND.L		#$0000FFFF,D6	; clear upper side of D2, leaving only quotient
+102000d0 4a06           				TST.B		D6
+102000d2 66e6           				BNE			ASCII_DEC		; repeat until quotient is 0
+102000d4 12bc 0000      				MOVE.B		#0,(A1)			; add null sign; A1 points to NULL after normal string
+102000d8 247c 1022 0400 				MOVEA.L 	#BUFFER+1024,A2	; ANSWER points to start of reversed string, A2 points to start of reversed string
+102000de 264a           				MOVEA.L 	A2,A3
+                        				
+102000e0 14e1           REVERSE_LOOP	MOVE.B		-(A1),(A2)+		; set last letter as first letter of reversed string
+102000e2 b1c9           				CMPA.L		A1,A0			; check if we have moved through all characters
+102000e4 66fa           				BNE			REVERSE_LOOP	; loop until we go through all characters
+102000e6 24bc 0000 0000 				MOVE.L 		#0,(A2)			; place 0 to represent end/null
+                        				; pop stuff out of the stack
+102000ec 2c1f           				MOVE.L		(A7)+,D6
+102000ee 205f           				MOVE.L		(A7)+,A0
+102000f0 224b           				MOVEA.L		A3,A1
+102000f2 245f           				MOVE.L		(A7)+,A2
+102000f4 4e75           				RTS
+                        
+                        DEC2BIN	; Important Note: D3 would be holding the encoded binary
+                        				; push stuff into stack
+102000f6 2f09           				MOVE.L	A1,-(A7)	; points to character
+102000f8 2f05           				MOVE.L	D5,-(A7)	; D5 contains ascii string
+102000fa 4283           				CLR.L	D3			; clear D3
+                        
+102000fc 4285           ASCII_BIN		CLR.L	D5			; clear D5
+102000fe 1a19           				MOVE.B	(A1)+,D5	; take an ascii character
+10200100 0485 0000 0030 				SUB.L	#$0030,D5	; subtract 0x30 to convert to decimal
+10200106 c6fc 000a      				MULU.W	#010,D3		; multiply current encoded binary by 10
+1020010a d685           				ADD.L	D5,D3		; add digit to current encoded binary
+1020010c 4a11           				TST.B	(A1)		; test to see if A1 has reached null yet
+1020010e 66ec           				BNE		ASCII_BIN	; repeat for every character, A1 should point to null at the end
+10200110 2a1f           				MOVE.L	(A7)+,D5	; pop
+10200112 225f           				MOVE.L	(A7)+,A1	; pop
+10200114 4e75           				RTS							
+                        
+                        
+                        ;;;;;;;;;;;;;;Calculator;;;;;;;;;;;;;;;;
+                        calculator ; choice 3 subroutine
+                        				; Display "Enter a number from 0 to 9999:"
+10200116 43f9 1021 0062 				lea		PROMPT1,A1
+1020011c 6100 ff5a      				bsr.w	out_string 
+10200120 6100 ff3c      				bsr.w	out_crlf
+                        				; Get the first string
+10200124 43f9 1022 0000 				lea		BUFFER,A1 	
+1020012a 6100 fee0      				bsr.w	in_string 
+1020012e 6100 ff2e      				bsr.w	out_crlf 
+10200132 61c2           				bsr		DEC2BIN ;turns ascii to binary
+                        				
+10200134 2203           				move.l	D3, D1 ;moves first number to D1
+                        				; Display "Enter a number from 0 to 9999:"
+10200136 43f9 1021 0062 				lea		PROMPT1,A1
+1020013c 6100 ff3a      				bsr.w	out_string 
+10200140 6100 ff1c      				bsr.w	out_crlf
+                        				; Get the second string
+10200144 43f9 1022 0000 				lea		BUFFER,A1 	
+1020014a 6100 fec0      				bsr.w	in_string 
+1020014e 6100 ff0e      				bsr.w	out_crlf 
+10200152 61a2           				bsr		DEC2BIN ;turns ascii to binary
+                        				
+10200154 2403           				move.l	D3, D2 ;moves second number to D2
+                        				; Get the third string, the operator
+10200156 43f9 1021 0081 				lea		PROMPT2,A1
+1020015c 6100 ff1a      				bsr.w	out_string 
+10200160 6100 fefc      				bsr.w	out_crlf
+10200164 43f9 1022 0000 				lea		BUFFER,A1 			
+1020016a 6100 fea0      				bsr.w	in_string 	
+1020016e 6100 feee      				bsr.w	out_crlf 
+                        				
+10200172 1811           				move.b	(A1),D4 ; moves operator to D4
+                        				; checks for which operator D4 is
+                        				; ascii character reference: http://www.pcguide.com/res/tablesASCII-c.html
+                        				; ADD_OPERATION
+10200174 b8bc 0000 002b 				cmp.l	#$002B,D4
+1020017a 6700 0064      				beq		ADD_OPERATION
+                        				; SUBTRACT_OPERATION
+1020017e b8bc 0000 002d 				cmp.l	#$002D,D4
+10200184 6700 007a      				beq		SUBTRACT_OPERATION
+                        				; MULTIPLY_OPERATION
+10200188 b8bc 0000 002a 				cmp.l	#$002A,D4
+1020018e 6700 00b4      				beq		MULTIPLY_OPERATION
+                        				; POWER_OPERATION
+10200192 b8bc 0000 005e 				cmp.l	#$005E,D4
+10200198 6700 00ce      				beq		POWER_OPERATION
+                        				; ERROR
+1020019c 43f9 1021 00b7 				lea		PROMPT4,A1 ; gives an error message
+102001a2 6100 fed4      				bsr.w	out_string 
+102001a6 6100 feb6      				bsr.w	out_crlf
+                        				
+102001aa 6000 ff6a      				bra		calculator ; returns to beginning
+                        				
+102001ae 43f9 1021 00c5 exit_loop		lea		PROMPT5,A1
+102001b4 6100 fec2      				bsr.w	out_string 
+102001b8 6100 fea4      				bsr.w	out_crlf
+                        				; Get the string
+102001bc 43f9 1022 0000 				lea		BUFFER,A1 	
+102001c2 6100 fe48      				bsr.w	in_string 
+102001c6 6100 fe96      				bsr.w	out_crlf 
+                        				; bsr		DEC2BIN ; turns ascii to binary
+102001ca 1e11           				move.b	(A1),D7
+                        				; if "n" is pressed, goes back to menu
+102001cc bebc 0000 0079 				cmp.l	#$0079,D7
+102001d2 6700 00b0      				beq		menu
+                        				; if "y" is pressed, stay in calculator mode
+102001d6 bebc 0000 006e 				cmp.l	#$006E,D7
+102001dc 6700 ff38      				beq		calculator
+                        				
+                        ADD_OPERATION ; results will be stored to D6
+102001e0 2f01           				move.l	D1,-(A7) ; Push
+102001e2 2f02           				move.l	D2,-(A7) ; Push
+102001e4 2f09           				move.l	A1,-(A7) ; Push
+102001e6 4286           				clr		D6
+102001e8 d481           				add.l	D1,D2 ; Perform addition
+102001ea 2c02           				move.l	D2,D6 ; Store answer in D6
+102001ec 6100 febc      				bsr		BIN2DEC ; Turn the answer to ascii character
+102001f0 6100 fe86      				bsr		out_string ; Output the answer
+102001f4 6100 fe68      				bsr		out_crlf ; Goes to newline
+102001f8 225f           				move.l	(A7)+,A1 ; Pop
+102001fa 241f           				move.l	(A7)+,D2 ; Pop
+102001fc 221f           				move.l	(A7)+,D1 ; Pop
+102001fe 60ae           				bra		exit_loop
+                        				
+                        SUBTRACT_OPERATION ; results will be stored to D6
+10200200 2f01           				move.l	D1,-(A7) ; Push
+10200202 2f02           				move.l	D2,-(A7) ; Push
+10200204 2f09           				move.l	A1,-(A7) ; Push
+10200206 4286           				clr		D6
+10200208 b481           				cmp.l	D1,D2 ; Check to see if the second number is larger than the first number
+1020020a 6e00 001a      				bgt		negative_sub ; branch to negative_sub if yes
+                        				
+1020020e 9282           				sub.l	D2,D1 ; Normal subtractions
+10200210 2c01           				move.l	D1,D6 ; Perform subtraction
+10200212 6100 fe96      				bsr		BIN2DEC ; Turn answer into ascii character
+10200216 6100 fe60      				bsr		out_string ; Output the answer
+1020021a 6100 fe42      				bsr		out_crlf ; Goes to newline
+1020021e 225f           				move.l	(A7)+,A1 ; Pop
+10200220 241f           				move.l	(A7)+,D2 ; Pop
+10200222 221f           				move.l	(A7)+,D1 ; Pop
+10200224 6088           				bra		exit_loop
+                        				
+10200226 9481           negative_sub	sub.l	D1,D2 ; Do negative subtractions
+10200228 2c02           				move.l	D2,D6 ; Perform subtraction
+1020022a 6100 fe7e      				bsr		BIN2DEC ; Turn answer into ascii character
+1020022e 133c 002d      				move.b	#$2D,-(A1) ; Prepend a negative sign in front of the answer
+10200232 6100 fe44      				bsr		out_string ; Output the answer
+10200236 6100 fe26      				bsr		out_crlf ; Goes to newline
+1020023a 225f           				move.l	(A7)+,A1 ; Pop
+1020023c 241f           				move.l	(A7)+,D2 ; Pop
+1020023e 221f           				move.l	(A7)+,D1 ; Pop
+10200240 6000 ff6c      				bra		exit_loop
+                        				
+                        MULTIPLY_OPERATION ; to be modified, results will be stored to D6
+10200244 2f01           				move.l	D1,-(A7) ; Push
+10200246 2f02           				move.l	D2,-(A7) ; Push
+10200248 2f09           				move.l	A1,-(A7) ; Push
+1020024a 4286           				clr		D6
+1020024c 4c01 2802      				muls.l	D1,D2 ; Perform multiplication
+10200250 2c02           				move.l	D2,D6 ; Anwswer is stored into D6
+10200252 6100 fe56      				bsr		BIN2DEC ; Turn answer into ascii character
+10200256 6100 fe20      				bsr		out_string ; Output the answer
+1020025a 6100 fe02      				bsr		out_crlf ; Goes to newline
+1020025e 225f           				move.l	(A7)+,A1 ; Pop
+10200260 241f           				move.l	(A7)+,D2 ; Pop
+10200262 221f           				move.l	(A7)+,D1 ; Pop
+10200264 6000 ff48      				bra		exit_loop
+                        				
+                        POWER_OPERATION ; to be modified, results will be stored to D6
+10200268 4c01 1801      				muls.l	D1,D1 ; Perform multiplication
+1020026c 6192           				bsr		SUBTRACT_OPERATION ; Do subtraction
+                        				
+                        INVALID_CHOICE	; for choice 1 & 2
+1020026e 2f09           				move.l		A1,-(A7)
+10200270 43f9 1021 00b7 				lea			PROMPT4,A1 ; Output error message
+10200276 6100 fe00      				bsr			out_string
+1020027a 6100 fde2      				bsr			out_crlf
+1020027e 225f           				move.l		(A7)+,A1
+10200280 6000 0002      				bra			menu ; Goes back to main menu
+                        ;;;;;;;;;;;;;;Calculator;;;;;;;;;;;;;;;;
+                        
+                        ;;;;;;;;;;;;;;Main Menu;;;;;;;;;;;;;;;;;
+                        start			; Important Notes: D5 will store ascii string		
+10200284 43f9 1021 0000 menu			lea PROMPT,A1 ; point to start of messages
+1020028a 6100 fdec      				bsr.w out_string ; print messages using out_string
+1020028e 6100 fdce      				bsr.w out_crlf ; go to new line using out_crlf
+10200292 43f9 1022 0000 				lea BUFFER,A1 ; point to start of buffer
+10200298 6100 fd72      				bsr.w in_string ; read string and add a trailing NULL
+1020029c 6100 fdc0      				bsr.w out_crlf ; go to next line
+102002a0 1a11           				move.b (A1), D5 ;moves ascii string to D5
+                        				
+102002a2 babc 0000 0033 				cmp.l #$33,D5 ;checks if D5 is equal to 3, branch to calculator mode
+102002a8 6700 fe6c      				beq calculator
+                        				
+102002ac babc 0000 0031 				cmp.l #$31,D5 ;checks if D5 is equal to 1
+102002b2 67ba           				beq INVALID_CHOICE ; output error msg
+                        				
+102002b4 babc 0000 0032 				cmp.l #$32,D5 ;checks if D5 is equal to 2
+102002ba 67b2           				beq INVALID_CHOICE ; output error msg
+                        				
+102002bc babc 0000 0030 				cmp.l #$30,D5 ;checks if D5 is equal to 0, exit program if yes
+102002c2 66c0           				bne menu ; goes back to menu if no
+102002c4 4e4f           				trap #15
+                        				end
+Assembly successful.

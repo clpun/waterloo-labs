@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1349984985387
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1349984987431
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.cut",1349984991112
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1349984993952
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349984998819
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349985598668
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349985600774
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.delete",1349985685774
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1349985686881
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349985691390
+activated,view,org.eclipse.debug.ui,3.5.1.v20090811_r351,"org.eclipse.debug.ui.DebugView",1349985696682
+activated,view,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console.ConsoleView",1349985696745
+activated,view,com.altera.sbtgui.launch,10.1.1.153,"com.altera.sbtgui.launch.hardware.ByteStreamConsoleView",1349985702724
+activated,editor,org.eclipse.cdt.ui,5.1.1.200909110608,"org.eclipse.cdt.ui.editor.CEditor",1349985750044
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349985791748
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349985797306
+error,log,,,"SOPC design not set.",1349985797416
+error,log,,,"CPU module not set.",1349985797447
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349985797494
+error,log,,,"CPU architecture type not set. ",1349985797525
+error,log,,,"CPU master group not set.",1349985797572
+error,log,,,"SOPC design not set.",1349985797696
+error,log,,,"CPU module not set.",1349985797743
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349985797774
+error,log,,,"CPU architecture type not set. ",1349985797806

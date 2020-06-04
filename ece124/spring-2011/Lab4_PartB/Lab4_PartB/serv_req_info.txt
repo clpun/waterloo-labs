@@ -1,0 +1,78 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>PJM</sub_system>
+	<file>/quartus/sys/pjm/pjm_dock_bar.cpp</file>
+	<line>273</line>
+	<callstack>
+	0x00409698: quartus + 0x9698
+	0x7863be82: mfc90 + 0x5be82
+	0x7863ba18: mfc90 + 0x5ba18
+	0x4c0d1c3a: AOT803AS + 0xd1c3a (SECMDIFrameWnd::WindowProc + 0x8a)
+	0x7863ba18: mfc90 + 0x5ba18
+	0x78647a18: mfc90 + 0x67a18
+	0x7863a60c: mfc90 + 0x5a60c
+	0x7863a898: mfc90 + 0x5a898
+	0x78638593: mfc90 + 0x58593
+	0x7e418733: USER32 + 0x8733 (GetDC + 0x6c)
+	0x7e418815: USER32 + 0x8815 (GetDC + 0x14e)
+	0x7e428e9f: USER32 + 0x18e9f (DefWindowProcW + 0x17f)
+	0x7e428eeb: USER32 + 0x18eeb (DefWindowProcW + 0x1cb)
+	0x7c90e472: ntdll + 0xe472 (KiUserCallbackDispatcher + 0x12)
+	0x7e42c227: USER32 + 0x1c227 (DefWindowProcA + 0xa9)
+	0x5ad71af5: UxTheme + 0x1af5
+	0x5ad8c2b0: UxTheme + 0x1c2b0 (GetThemeAppProperties + 0x4f)
+	0x7e42f15b: USER32 + 0x1f15b (SendInput + 0x1b)
+	0x7e418733: USER32 + 0x8733 (GetDC + 0x6c)
+	0x7e418815: USER32 + 0x8815 (GetDC + 0x14e)
+	0x7e42a012: USER32 + 0x1a012 (IsWindowUnicode + 0xa0)
+	0x7e42a997: USER32 + 0x1a997 (CallWindowProcA + 0x1a)
+	0x7863b117: mfc90 + 0x5b117
+	0x7863a6db: mfc90 + 0x5a6db
+	0x100062ac: GCL_AFC + 0x62ac (?OnWndMsg@AFC_NESTED_FRAME@@UAEHIIJPAJ@Z + 0x3c)
+	0x7863ba18: mfc90 + 0x5ba18
+	0x78647a18: mfc90 + 0x67a18
+	0x7863a60c: mfc90 + 0x5a60c
+	0x7863a898: mfc90 + 0x5a898
+	0x78638593: mfc90 + 0x58593
+	0x7e418733: USER32 + 0x8733 (GetDC + 0x6c)
+	0x7e418815: USER32 + 0x8815 (GetDC + 0x14e)
+	0x7e42bf14: USER32 + 0x1bf14 (UserLpkPSMTextOut + 0x2ef)
+	0x7e42c227: USER32 + 0x1c227 (DefWindowProcA + 0xa9)
+	0x7e42c1d4: USER32 + 0x1c1d4 (DefWindowProcA + 0x56)
+	0x7e418733: USER32 + 0x8733 (GetDC + 0x6c)
+	0x7e418815: USER32 + 0x8815 (GetDC + 0x14e)
+	0x7e42a012: USER32 + 0x1a012 (IsWindowUnicode + 0xa0)
+	0x7e42a997: USER32 + 0x1a997 (CallWindowProcA + 0x1a)
+	0x7863b117: mfc90 + 0x5b117
+	0x7863ba2f: mfc90 + 0x5ba2f
+	0x78647a18: mfc90 + 0x67a18
+	0x7863a60c: mfc90 + 0x5a60c
+	0x7863a898: mfc90 + 0x5a898
+	0x78638593: mfc90 + 0x58593
+	0x7e418733: USER32 + 0x8733 (GetDC + 0x6c)
+	0x7e418815: USER32 + 0x8815 (GetDC + 0x14e)
+	0x7e4189cc: USER32 + 0x89cc (GetWindowLongW + 0x126)
+	0x7e418a0f: USER32 + 0x8a0f (DispatchMessageW + 0xe)
+	0x7e4274fe: USER32 + 0x174fe (IsDialogMessageW + 0xda)
+	0x7e43c6d2: USER32 + 0x2c6d2 (IsDialogMessage + 0x49)
+	0x786686c3: mfc90 + 0x886c3
+	0x7863ea6e: mfc90 + 0x5ea6e
+	0x78647922: mfc90 + 0x67922
+	0x7863ccab: mfc90 + 0x5ccab
+	0x7867a815: mfc90 + 0x9a815
+	0x7867b016: mfc90 + 0x9b016
+	0x1000a89a: GCL_AFC + 0xa89a (?PreTranslateMessage@AFC_APP@@UAEHPAUtagMSG@@@Z + 0xa)
+	0x7867a74a: mfc90 + 0x9a74a
+	0x003d1968: ccl_thr + 0x1968 (thr_thread_var_destroy + 0x28)
+	0x78647201: mfc90 + 0x67201
+	0x0044f42e: quartus + 0x4f42e (Pjm_Uninit + 0x401ee)
+	0x7c817076: kernel32 + 0x17076 (RegisterWaitForInputIdle + 0x48)
+	0xffffffffffffffff:
+	</callstack>
+	<error>view_popup != NULL</error>
+	<date>Sun Jul 17 15:26:18 2011</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>view_popup != NULL
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+

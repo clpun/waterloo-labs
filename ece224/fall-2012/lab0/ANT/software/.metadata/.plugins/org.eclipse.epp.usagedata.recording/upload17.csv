@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+error,log,,,"CPU architecture type not set. ",1349978868767
+error,log,,,"CPU master group not set.",1349978868820
+error,log,,,"Expected base address of system ID component is undefined.",1349978868906
+error,log,,,"SOPC design not set.",1349978868949
+error,log,,,"CPU module not set.",1349978868991
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349978869034
+error,log,,,"CPU architecture type not set. ",1349978869070
+error,log,,,"CPU master group not set.",1349978869104
+error,log,,,"Expected base address of system ID component is undefined.",1349978869137
+error,log,,,"SOPC design not set.",1349978869171
+error,log,,,"CPU module not set.",1349978869205
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349978869239
+error,log,,,"CPU architecture type not set. ",1349978869273
+error,log,,,"CPU master group not set.",1349978869307
+error,log,,,"Expected base address of system ID component is undefined.",1349978869342
+error,log,,,"SOPC design not set.",1349978869377
+error,log,,,"CPU module not set.",1349978869413
+error,log,,,"The SOPC design does not contain a CPU of a supported architecture.",1349978869448
+error,log,,,"CPU architecture type not set. ",1349978869487
+error,log,,,"CPU master group not set.",1349978869530
+error,log,,,"Expected base address of system ID component is undefined.",1349978869565
+error,log,,,"No ELF file path has been selected.",1349978869732
+error,log,,,"Expected base address of system ID component is undefined.",1349978869767
+error,log,,,"No ELF file path has been selected.",1349978869829
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1349978869865

@@ -1,0 +1,38 @@
+*** Creating Trace Output File '.\SIM\rtx_nolib_demo_stu.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\sim\svc_table.o"'
+### List of Objects: adding '".\sim\hal_cm3.o"'
+### List of Objects: adding '".\sim\rt_event.o"'
+### List of Objects: adding '".\sim\rt_list.o"'
+### List of Objects: adding '".\sim\rt_mailbox.o"'
+### List of Objects: adding '".\sim\rt_mem.o"'
+### List of Objects: adding '".\sim\rt_membox.o"'
+### List of Objects: adding '".\sim\rt_mutex.o"'
+### List of Objects: adding '".\sim\rt_robin.o"'
+### List of Objects: adding '".\sim\rt_semaphore.o"'
+### List of Objects: adding '".\sim\rt_system.o"'
+### List of Objects: adding '".\sim\rt_task.o"'
+### List of Objects: adding '".\sim\rt_time.o"'
+### List of Objects: adding '".\sim\rt_timer.o"'
+### List of Objects: adding '".\sim\startup_lpc17xx.o"'
+### List of Objects: adding '".\sim\retarget.o"'
+### List of Objects: adding '".\sim\rtx_conf_cm.o"'
+### List of Objects: adding '".\sim\serial.o"'
+### List of Objects: adding '".\sim\system_lpc17xx.o"'
+### List of Objects: adding '".\sim\main.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\sim\svc_table.o" ".\sim\hal_cm3.o" ".\sim\rt_event.o" ".\sim\rt_list.o" ".\sim\rt_mailbox.o" ".\sim\rt_mem.o" ".\sim\rt_membox.o" ".\sim\rt_mutex.o" ".\sim\rt_robin.o" ".\sim\rt_semaphore.o" ".\sim\rt_system.o" ".\sim\rt_task.o" ".\sim\rt_time.o" ".\sim\rt_timer.o" ".\sim\startup_lpc17xx.o" ".\sim\retarget.o" ".\sim\rtx_conf_cm.o" ".\sim\serial.o" ".\sim\system_lpc17xx.o" ".\sim\main.o" --strict --scatter ".\SIM\rtx_nolib_demo_stu.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\SIM\lst\rtx_nolib_demo_stu.map" -o ".\SIM\rtx_nolib_demo_stu.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\SIM\rtx_nolib_demo_stu.axf'
+### ADS-LD Command File: '.\SIM\rtx_nolib_demo_stu.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\SIM\rtx_nolib_demo_stu.lnp', Handle=0x00000DF8
+### Writing '.lnp' file
+### ADS-LD Command file '.\SIM\rtx_nolib_demo_stu.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

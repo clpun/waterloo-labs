@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jul 17 20:19:40 2011
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : Lab4_Change_for_Simulation
+Top-level Entity Name : Lab4_Change_for_Simulation
+Family : Cyclone II
+Total logic elements : 64
+    Total combinational functions : 64
+    Dedicated logic registers : 21
+Total registers : 21
+Total pins : 78
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
